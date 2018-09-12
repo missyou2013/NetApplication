@@ -61,7 +61,7 @@ public class Constants {
     public static final String APP_ID = "wxe544423c9955d614";// wxe544423c9955d614
     //检测模式
 //    public static String[] MY_ACCOUNT_MODEL_LIST = {"外检", "路试", "底盘动态","调度"};
-    public static String[] MY_ACCOUNT_MODEL_LIST = {"外检", "路试", "底盘动态" };
+    public static String[] MY_ACCOUNT_MODEL_LIST = {"外检", "路试", "底盘动态","外廓尺寸","逆反系数" };
 
     //是否
     public static String[] YES_NO = {"否", "是"};

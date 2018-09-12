@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f2f2f2">
+
+    <RelativeLayout
+        android:id="@+id/bg_re_showResult"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ffffff">
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tv_FieldName"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:textColor="#036eb8"
+        android:textSize="15dip"/>
+
+    <ImageView
+        android:id="@+id/image_FieldName"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        
+    </ImageView>
+    
+    <EditText
+        android:id="@+id/et_FieldName"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:singleLine="true"
+        android:textColor="#000000"       
+        />
+     
+</RelativeLayout>

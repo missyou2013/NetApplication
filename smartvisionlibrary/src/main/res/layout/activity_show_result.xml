@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f2f2f2">
+
+    <RelativeLayout
+        android:id="@+id/relayout_recogResult"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center">
+
+                <ListView
+                    android:id="@+id/list_recogRecog"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:scrollbars="none" />
+            </RelativeLayout>
+
+    </RelativeLayout>
+
+    <FrameLayout
+
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <RelativeLayout
+            android:id="@+id/FLayout_recogResult"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#036eb8">
+            <ImageButton
+                android:id="@+id/imbtn_back"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/btn_back" />
+
+            <TextView
+                android:id="@+id/tv_recogResult"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:textColor="#ffffff"
+                android:textSize="18dip"
+                 />
+        </RelativeLayout>
+    </FrameLayout>
+
+   		<ListView
+        		android:id="@+id/list_vinParse"
+        		android:layout_width="fill_parent"
+        		android:layout_height="fill_parent"
+        		android:scrollbars="none" 
+        		android:divider="#00000000"
+        		android:visibility="gone"/>        
+    <!--<RelativeLayout-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="fill_parent">-->
+        <ImageButton
+            android:id="@+id/imbtn_submit"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/btn_submit" />
+    <!--</RelativeLayout>-->
+    <ImageButton
+        android:id="@+id/imbtn_feedback"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/btn_feed" />
+</RelativeLayout>

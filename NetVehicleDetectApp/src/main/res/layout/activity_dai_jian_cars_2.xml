@@ -61,6 +61,7 @@
             android:layout_centerVertical="true"
             android:layout_gravity="center_vertical"
             android:layout_marginRight="5dp"
+            android:visibility="gone"
             android:layout_toRightOf="@+id/ac_set_view_m"
             android:layout_weight="1.4"
             android:background="@drawable/my_shape"

@@ -11,11 +11,12 @@
             <option value="$PROJECT_DIR$/Ble_app_test_001" />
             <option value="$PROJECT_DIR$/FastBleLib" />
             <option value="$PROJECT_DIR$/NetVehicleDetectApp" />
-            <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/app_002" />
             <option value="$PROJECT_DIR$/app_BluetoothLELibrary" />
+            <option value="$PROJECT_DIR$/app_ble223" />
             <option value="$PROJECT_DIR$/app_fastBleLib" />
             <option value="$PROJECT_DIR$/app_finger" />
+            <option value="$PROJECT_DIR$/app_smart_vin" />
             <option value="$PROJECT_DIR$/ble_test_110" />
             <option value="$PROJECT_DIR$/bluetooth-manager-lib" />
             <option value="$PROJECT_DIR$/imageeditlibrary" />
@@ -23,6 +24,7 @@
             <option value="$PROJECT_DIR$/library_ble_22" />
             <option value="$PROJECT_DIR$/sample_app" />
             <option value="$PROJECT_DIR$/scan" />
+            <option value="$PROJECT_DIR$/smartvisionlibrary" />
             <option value="$PROJECT_DIR$/wuxi_app" />
           </set>
         </option>

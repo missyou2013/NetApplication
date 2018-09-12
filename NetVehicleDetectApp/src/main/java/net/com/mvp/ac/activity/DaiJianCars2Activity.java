@@ -102,13 +102,13 @@ public class DaiJianCars2Activity extends BaseActivity implements AdapterView.On
         setHideLeftBtn();
         instances = this;
 
-        setRightTxt("重新下线", new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(DaiJianCars2Activity.this, DownLineCarsListActivity.class);
-                startActivity(i);
-            }
-        });
+//        setRightTxt("重新下线", new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent i = new Intent(DaiJianCars2Activity.this, DownLineCarsListActivity.class);
+//                startActivity(i);
+//            }
+//        });
 
         Login_name=getIntent().getExtras().getString("login_UserID","");
         login_IDNumber=getIntent().getExtras().getString("login_IDNumber","");

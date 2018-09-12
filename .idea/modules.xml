@@ -6,11 +6,12 @@
       <module fileurl="file://$PROJECT_DIR$/FastBleLib/FastBleLib.iml" filepath="$PROJECT_DIR$/FastBleLib/FastBleLib.iml" />
       <module fileurl="file://$PROJECT_DIR$/NetApplication.iml" filepath="$PROJECT_DIR$/NetApplication.iml" />
       <module fileurl="file://$PROJECT_DIR$/NetVehicleDetectApp/NetVehicleDetectApp.iml" filepath="$PROJECT_DIR$/NetVehicleDetectApp/NetVehicleDetectApp.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/app_002/app_002.iml" filepath="$PROJECT_DIR$/app_002/app_002.iml" />
       <module fileurl="file://$PROJECT_DIR$/app_BluetoothLELibrary/app_BluetoothLELibrary.iml" filepath="$PROJECT_DIR$/app_BluetoothLELibrary/app_BluetoothLELibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app_ble223/app_ble223.iml" filepath="$PROJECT_DIR$/app_ble223/app_ble223.iml" />
       <module fileurl="file://$PROJECT_DIR$/app_fastBleLib/app_fastBleLib.iml" filepath="$PROJECT_DIR$/app_fastBleLib/app_fastBleLib.iml" />
       <module fileurl="file://$PROJECT_DIR$/app_finger/app_finger.iml" filepath="$PROJECT_DIR$/app_finger/app_finger.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app_smart_vin/app_smart_vin.iml" filepath="$PROJECT_DIR$/app_smart_vin/app_smart_vin.iml" />
       <module fileurl="file://$PROJECT_DIR$/ble_test_110/ble_test_110.iml" filepath="$PROJECT_DIR$/ble_test_110/ble_test_110.iml" />
       <module fileurl="file://$PROJECT_DIR$/bluetooth-manager-lib/bluetooth-manager-lib.iml" filepath="$PROJECT_DIR$/bluetooth-manager-lib/bluetooth-manager-lib.iml" />
       <module fileurl="file://$PROJECT_DIR$/imageeditlibrary/imageeditlibrary.iml" filepath="$PROJECT_DIR$/imageeditlibrary/imageeditlibrary.iml" />
@@ -18,6 +19,7 @@
       <module fileurl="file://$PROJECT_DIR$/library_ble_22/library_ble_22.iml" filepath="$PROJECT_DIR$/library_ble_22/library_ble_22.iml" />
       <module fileurl="file://$PROJECT_DIR$/sample_app/sample_app.iml" filepath="$PROJECT_DIR$/sample_app/sample_app.iml" />
       <module fileurl="file://$PROJECT_DIR$/scan/scan.iml" filepath="$PROJECT_DIR$/scan/scan.iml" />
+      <module fileurl="file://$PROJECT_DIR$/smartvisionlibrary/smartvisionlibrary.iml" filepath="$PROJECT_DIR$/smartvisionlibrary/smartvisionlibrary.iml" />
       <module fileurl="file://$PROJECT_DIR$/wuxi_app/wuxi_app.iml" filepath="$PROJECT_DIR$/wuxi_app/wuxi_app.iml" />
     </modules>
   </component>

@@ -355,10 +355,42 @@ public class LoginActivity extends BaseActivity {
                                         Is_skip = true;
                                     }
                                     break;
+//                                case 3:
+//                                    //调度
+//                                    if (BaseApplication.userAccountModelList.get(Currentindex).getUserRight
+//                                            ().contains("2")
+//                                            ) {
+//                                        Is_skip = true;
+//                                    } else {
+//                                        Is_skip = false;
+//                                        Toast.makeText(this, getResources().getString(R.string
+//                                                .quanxian_inconformity), Toast.LENGTH_LONG).show();
+//                                    }
+////                                    if (BaseApplication.userAccountModelList.get(Currentindex).getUserRight
+////                                            ().equals("")) {
+////                                        Is_skip = true;
+////                                    }
+//                                    break;
                                 case 3:
-                                    //调度
+                                    //外廓尺寸
                                     if (BaseApplication.userAccountModelList.get(Currentindex).getUserRight
-                                            ().contains("2")
+                                            ().contains("0")
+                                            ) {
+                                        Is_skip = true;
+                                    } else {
+                                        Is_skip = false;
+                                        Toast.makeText(this, getResources().getString(R.string
+                                                .quanxian_inconformity), Toast.LENGTH_LONG).show();
+                                    }
+//                                    if (BaseApplication.userAccountModelList.get(Currentindex).getUserRight
+//                                            ().equals("")) {
+//                                        Is_skip = true;
+//                                    }
+                                    break;
+                                case 4:
+                                    //逆反系数
+                                    if (BaseApplication.userAccountModelList.get(Currentindex).getUserRight
+                                            ().contains("0")
                                             ) {
                                         Is_skip = true;
                                     } else {

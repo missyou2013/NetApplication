@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Info>
+    <Platform Android="yes" IOS="no" />
+    <!--慧视OCR产品-->
+    <Product Type="17">
+         
+        <!--三证合一-->
+        <!--<SmartVisition Type="0001" name="营业执照" isselected="true">-->
+			   <!--&lt;!&ndash;二维码 0.3*1.67=0.501&ndash;&gt;           -->
+            <!--&lt;!&ndash;统一社会信用代码 255_0_255_0 代表透明度_r分量_g分量_b分量 他们的范围在0~255之间&ndash;&gt;-->
+             <!--<ScanningFrame Type="0" color="255_159_242_74" height="0.15" leftPointX="0.1" leftPointY="0.4"-->
+                <!--width="0.7" name="统一社会信用代码" nameTextSize="40" nameTextColor="255_255_255_255" namePositionX="0.35" namePositionY="0.35" ocrId="SV_ID_YYZZ_TYSHXYDM"></ScanningFrame>-->
+            <!--&lt;!&ndash;公司名称&ndash;&gt;-->
+            <!--<ScanningFrame Type="1" color="255_159_242_74" height="0.15" leftPointX="0.05" leftPointY="0.4"-->
+                <!--width="0.75" name="公司名称" nameTextSize="40" nameTextColor="255_255_255_255" namePositionX="0.38" namePositionY="0.35" ocrId="SV_ID_YYZZ_MC"></ScanningFrame>-->
+            <!---->
+            <!--&lt;!&ndash;二维码 0.3*1.67=0.501&ndash;&gt;-->
+     		<!--<ScanningFrame Type="2" color="255_159_242_74" height="0.38" leftPointX="0.33" leftPointY="0.28"-->
+                <!--width="0.24" name="二维码" nameTextSize="40" nameTextColor="255_255_255_255" namePositionX="0.38" namePositionY="0.2" ocrId="SV_ID_BARCODE_QR">-->
+            <!--</ScanningFrame>-->
+            <!--</SmartVisition>-->
+        <!--VIN码-->
+        <SmartVisition Type="0001" name="VIN码" isselected="true">
+            <ScanningFrame Type="0" color="255_159_242_74" height="0.14" leftPointX="0.1" leftPointY="0.4"
+                width="0.7" name="VIN码" nameTextSize="40" nameTextColor="255_255_255_255" namePositionX="0.38" namePositionY="0.35" ocrId="SV_ID_VIN_CARWINDOW"></ScanningFrame>
+        </SmartVisition>
+        <!--手机号码-->
+        <SmartVisition Type="0002" name="手机号码" isselected="true">
+            <ScanningFrame Type="0" color="255_159_242_74" height="0.14" leftPointX="0.15" leftPointY="0.4"
+                width="0.55" name="手机号码" nameTextSize="40" nameTextColor="255_255_255_255" namePositionX="0.38" namePositionY="0.35" ocrId="SV_ID_YYZZ_MOBILEPHONE"></ScanningFrame>
+        </SmartVisition>
+        
+
+        <!--发票 -->
+        <!--<SmartVisition Type="0004" name="发票" isselected="true">-->
+            <!--<ScanningFrame Type="0" color="255_159_242_74" height="0.15" leftPointX="0.15" leftPointY="0.4"-->
+                <!--width="0.55" name="发票号码" nameTextSize="40" nameTextColor="255_255_255_255" namePositionX="0.38" namePositionY="0.35" ocrId="SV_ID_INVOICE_NUMBER"></ScanningFrame>-->
+            <!--<ScanningFrame Type="1" color="255_159_242_74" height="0.15" leftPointX="0.15" leftPointY="0.4"-->
+                <!--width="0.55" name="发票代码" nameTextSize="40" nameTextColor="255_255_255_255" namePositionX="0.38" namePositionY="0.35" ocrId="SV_ID_INVOICE_CODE"></ScanningFrame>-->
+            <!--<ScanningFrame Type="2" color="255_159_242_74" height="0.15" leftPointX="0.15" leftPointY="0.4"-->
+                <!--width="0.55" name="发票金额" nameTextSize="40" nameTextColor="255_255_255_255" namePositionX="0.38" namePositionY="0.35" ocrId="SV_ID_INVOICE_MONEY"></ScanningFrame>-->
+            <!--<ScanningFrame Type="3" color="255_159_242_74" height="0.15" leftPointX="0.15" leftPointY="0.4"-->
+                <!--width="0.55" name="发票开票日期" nameTextSize="40" nameTextColor="255_255_255_255" namePositionX="0.38" namePositionY="0.35" ocrId="SV_ID_INVOICE_DATE"></ScanningFrame>-->
+            <!--<ScanningFrame Type="4" color="255_159_242_74" height="0.15" leftPointX="0.05" leftPointY="0.4"-->
+                <!--width="0.75" name="发票买方单位名称" nameTextSize="40" nameTextColor="255_255_255_255" namePositionX="0.38" namePositionY="0.35" ocrId="SV_ID_INVOICE_BUYCOMPANYNAME"></ScanningFrame>-->
+        <!--</SmartVisition>-->
+       
+    </Product>
+</Info>

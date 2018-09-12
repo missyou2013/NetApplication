@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:background="@color/set_bg"
-              android:orientation="vertical">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/set_bg"
+    android:orientation="vertical">
     <!--设置-->
     <include layout="@layout/top_title"></include>
 
@@ -30,14 +30,14 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="3"
                     android:text="@string/ip_activity_setting"
-                    android:textSize="@dimen/set_fot_16"/>
+                    android:textSize="@dimen/set_fot_16" />
 
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/port_activity_setting"
-                    android:textSize="@dimen/set_fot_16"/>
+                    android:textSize="@dimen/set_fot_16" />
 
             </LinearLayout>
 
@@ -57,7 +57,7 @@
                     android:background="@mipmap/et_bg"
                     android:text="192.168.0.188"
                     android:textColor="@color/black"
-                    android:textSize="@dimen/set_fot_16"/>
+                    android:textSize="@dimen/set_fot_16" />
 
                 <EditText
                     android:id="@+id/ac_setting_et_port"
@@ -68,7 +68,7 @@
                     android:gravity="center_vertical"
                     android:paddingLeft="5dp"
                     android:text="8089"
-                    android:textSize="@dimen/set_fot_16"/>
+                    android:textSize="@dimen/set_fot_16" />
             </LinearLayout>
 
             <LinearLayout
@@ -84,14 +84,14 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="3"
                     android:text="@string/file_ip_activity_setting"
-                    android:textSize="@dimen/set_fot_16"/>
+                    android:textSize="@dimen/set_fot_16" />
 
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/port_activity_setting"
-                    android:textSize="@dimen/set_fot_16"/>
+                    android:textSize="@dimen/set_fot_16" />
 
             </LinearLayout>
 
@@ -111,7 +111,7 @@
                     android:background="@mipmap/et_bg"
                     android:text="192.168.0.188"
                     android:textColor="@color/black"
-                    android:textSize="@dimen/set_fot_16"/>
+                    android:textSize="@dimen/set_fot_16" />
 
                 <EditText
                     android:id="@+id/ac_setting_et_port_file"
@@ -122,7 +122,7 @@
                     android:gravity="center_vertical"
                     android:paddingLeft="5dp"
                     android:text="8091"
-                    android:textSize="@dimen/set_fot_16"/>
+                    android:textSize="@dimen/set_fot_16" />
             </LinearLayout>
 
             <LinearLayout
@@ -131,8 +131,8 @@
                 android:layout_marginLeft="30dp"
                 android:layout_marginRight="30dp"
                 android:layout_marginTop="20dp"
-                android:visibility="gone"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:visibility="gone">
 
                 <EditText
                     android:id="@+id/ac_setting_et_ip_webservices"
@@ -143,7 +143,7 @@
                     android:background="@mipmap/et_bg"
                     android:text="http://192.168.100.26/"
                     android:textColor="@color/black"
-                    android:textSize="@dimen/set_fot_16"/>
+                    android:textSize="@dimen/set_fot_16" />
 
                 <EditText
                     android:id="@+id/ac_setting_et_port_webservices"
@@ -155,7 +155,7 @@
                     android:paddingLeft="5dp"
                     android:text="pnweb/services/TmriOutNewAccess"
                     android:textColor="@color/black"
-                    android:textSize="@dimen/set_fot_16"/>
+                    android:textSize="@dimen/set_fot_16" />
             </LinearLayout>
 
             <LinearLayout
@@ -172,7 +172,7 @@
                     android:layout_marginTop="20dp"
                     android:text="@string/jiqima_activity_setting"
                     android:textSize="@dimen/set_fot_16"
-                    android:visibility="gone"/>
+                    android:visibility="gone" />
 
                 <EditText
                     android:id="@+id/ac_setting_et_jiqima"
@@ -184,7 +184,7 @@
                     android:paddingLeft="5dp"
                     android:text=""
                     android:textSize="@dimen/set_fot_16"
-                    android:visibility="gone"/>
+                    android:visibility="gone" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -192,7 +192,7 @@
                     android:layout_marginTop="@dimen/set_top"
                     android:text="@string/shouquanma_activity_setting"
                     android:textSize="@dimen/set_fot_16"
-                    android:visibility="gone"/>
+                    android:visibility="gone" />
 
                 <EditText
                     android:id="@+id/ac_setting_et_shouquanma"
@@ -203,7 +203,7 @@
                     android:paddingLeft="5dp"
                     android:text=""
                     android:textSize="@dimen/set_fot_16"
-                    android:visibility="gone"/>
+                    android:visibility="gone" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -211,7 +211,7 @@
                     android:layout_marginTop="@dimen/set_top"
                     android:text="@string/shujuku_activity_setting"
                     android:textSize="@dimen/set_fot_16"
-                    android:visibility="gone"/>
+                    android:visibility="gone" />
 
                 <TextView
                     android:id="@+id/ac_setting_txt_shujuku"
@@ -224,7 +224,7 @@
                     android:text="@string/fou_activity_setting"
                     android:textColor="@color/white"
                     android:textSize="@dimen/set_fot_16"
-                    android:visibility="gone"/>
+                    android:visibility="gone" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -232,7 +232,7 @@
                     android:layout_marginTop="@dimen/set_top_5"
                     android:text="@string/jiane_mode_activity_setting"
                     android:textSize="@dimen/set_fot_16"
-                    android:visibility="gone"/>
+                    android:visibility="gone" />
 
                 <TextView
                     android:id="@+id/ac_setting_txt_jiane_mode"
@@ -245,7 +245,7 @@
                     android:text="@string/l_check_mode_wai"
                     android:textColor="@color/white"
                     android:textSize="@dimen/set_fot_16"
-                    android:visibility="gone"/>
+                    android:visibility="gone" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -253,7 +253,7 @@
                     android:layout_marginTop="@dimen/set_top_5"
                     android:text="@string/zhaopianjiashuiyin_activity_setting"
                     android:textSize="@dimen/set_fot_16"
-                    android:visibility="gone"/>
+                    android:visibility="gone" />
 
                 <TextView
                     android:id="@+id/ac_setting_txt_zhaopianshuiyin"
@@ -266,7 +266,7 @@
                     android:text="@string/fou_activity_setting"
                     android:textColor="@color/white"
                     android:textSize="@dimen/set_fot_16"
-                    android:visibility="gone"/>
+                    android:visibility="gone" />
 
 
                 <TextView
@@ -275,7 +275,7 @@
                     android:layout_marginTop="@dimen/set_top_5"
                     android:text="@string/bianma_activity_setting"
                     android:textSize="@dimen/set_fot_16"
-                    android:visibility="gone"/>
+                    android:visibility="gone" />
 
                 <TextView
                     android:id="@+id/ac_setting_txt_bianma"
@@ -288,7 +288,7 @@
                     android:text="@string/fou_activity_setting"
                     android:textColor="@color/white"
                     android:textSize="@dimen/set_fot_16"
-                    android:visibility="gone"/>
+                    android:visibility="gone" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -296,7 +296,7 @@
                     android:layout_marginTop="@dimen/set_top_5"
                     android:text="@string/shijian_xianzhi_activity_setting"
                     android:textSize="@dimen/set_fot_16"
-                    android:visibility="gone"/>
+                    android:visibility="gone" />
 
                 <TextView
                     android:id="@+id/ac_setting_txt_shijian"
@@ -309,7 +309,7 @@
                     android:text="@string/fou_activity_setting"
                     android:textColor="@color/white"
                     android:textSize="@dimen/set_fot_16"
-                    android:visibility="gone"/>
+                    android:visibility="gone" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -317,7 +317,7 @@
                     android:layout_marginTop="@dimen/set_top_5"
                     android:text="@string/moren_chepai_qianzhui_activity_setting"
                     android:textSize="@dimen/set_fot_16"
-                    android:visibility="gone"/>
+                    android:visibility="gone" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -336,7 +336,7 @@
                         android:paddingRight="10dp"
                         android:text="@string/ce_activity_setting"
                         android:textColor="@color/white"
-                        android:textSize="@dimen/set_fot_16"/>
+                        android:textSize="@dimen/set_fot_16" />
 
                     <TextView
                         android:id="@+id/ac_setting_txt_chepai_right"
@@ -349,7 +349,7 @@
                         android:paddingRight="10dp"
                         android:text="@string/a_activity_setting"
                         android:textColor="@color/white"
-                        android:textSize="@dimen/set_fot_16"/>
+                        android:textSize="@dimen/set_fot_16" />
 
                 </LinearLayout>
 
@@ -366,8 +366,7 @@
                         android:layout_height="40dp"
                         android:gravity="center_vertical"
                         android:text="是否自动刷新"
-                        android:textSize="20sp"
-                        />
+                        android:textSize="20sp" />
 
                     <TextView
                         android:id="@+id/ac_setting_txt_moren"
@@ -380,25 +379,23 @@
                         android:paddingRight="10dp"
                         android:text="是"
                         android:textColor="@color/blue"
-                        android:textSize="20sp"
-                        />
+                        android:textSize="20sp" />
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:layout_marginTop="0dp"
-                    android:visibility="gone"
                     android:gravity="center_vertical"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:visibility="gone">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="40dp"
                         android:gravity="center_vertical"
                         android:text="是否编辑图片"
-                        android:textSize="20sp"
-                        />
+                        android:textSize="20sp" />
 
                     <TextView
                         android:id="@+id/ac_setting_txt_paizhao"
@@ -411,8 +408,7 @@
                         android:paddingRight="10dp"
                         android:text="否"
                         android:textColor="@color/blue"
-                        android:textSize="20sp"
-                        />
+                        android:textSize="20sp" />
                 </LinearLayout>
 
 
@@ -434,7 +430,7 @@
                         android:paddingLeft="15dp"
                         android:paddingRight="15dp"
                         android:text="@string/cancle_activity_setting"
-                        android:textSize="18sp"/>
+                        android:textSize="18sp" />
 
                     <TextView
                         android:id="@+id/ac_set_view_m"
@@ -454,33 +450,49 @@
                         android:paddingLeft="15dp"
                         android:paddingRight="15dp"
                         android:text="@string/save_activity_setting"
-                        android:textSize="18sp"/>
+                        android:textSize="18sp" />
                 </RelativeLayout>
-                <Button
-                    android:id="@+id/ac_set_btn_obd"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:background="@drawable/my_shape"
-                    android:gravity="center"
-                    android:paddingLeft="15dp"
-                    android:paddingRight="15dp"
-                    android:text="OBD"
-                    android:textSize="18sp"/>
-                <Button
-                    android:id="@+id/ac_set_btn_finger"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:background="@drawable/my_shape"
-                    android:gravity="center"
-                    android:layout_marginTop="20dp"
-                    android:paddingLeft="15dp"
-                    android:paddingRight="15dp"
-                    android:text="指纹"
-                    android:textSize="18sp"/>
-            </LinearLayout>
 
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/ac_set_btn_obd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/my_shape"
+                        android:gravity="center"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:text="OBD"
+                        android:textSize="18sp" />
+
+                    <Button
+                        android:id="@+id/ac_set_btn_finger"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:background="@drawable/my_shape"
+                        android:gravity="center"
+                        android:text="指纹"
+                        android:textSize="18sp" />
+
+                    <Button
+                        android:id="@+id/ac_set_btn_qianzi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/my_shape"
+                        android:gravity="center"
+                        android:text="签字图片采集"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </LinearLayout>
         </LinearLayout>
     </ScrollView>
 

@@ -107,6 +107,8 @@ public class SettingActivity extends BaseActivity implements AdapterView.OnItemC
     Button acSetBtnObd;
     @BindView(R.id.ac_set_btn_finger)
     Button acSetBtnFinger;
+    @BindView(R.id.ac_set_btn_qianzi)
+    Button acSetBtnQianzi;
 
     //popuwindow
     private View popu_view;
@@ -130,6 +132,7 @@ public class SettingActivity extends BaseActivity implements AdapterView.OnItemC
     BluetoothManager bluetoothManager;
     Context context;
     private BluetoothAdapter defaultAdapter;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -160,7 +163,7 @@ public class SettingActivity extends BaseActivity implements AdapterView.OnItemC
         } else {
             acSettingTxtPaizhao.setText("否");
         }
-        context=this;
+        context = this;
 //        BluetoothManager bluetoothManager=(BluetoothManager) context.getService(Context.BLUETOOTH_SERVICE);
 
 //        if (defaultAdapter.getScanMode()!=defaultAdapter.SCAN_MODE_CONNECTABLE_DISCOVERABLE);
@@ -176,9 +179,14 @@ public class SettingActivity extends BaseActivity implements AdapterView.OnItemC
             R.id.ac_setting_txt_bianma, R.id.ac_setting_txt_shijian,
             R.id.ac_setting_txt_chepai_left, R.id.ac_setting_txt_chepai_right,
             R.id.ac_set_btn_cancle, R.id.ac_set_btn_save, R.id.ac_set_btn_finger,
-            R.id.ac_setting_txt_paizhao, R.id.ac_set_btn_obd})
+            R.id.ac_setting_txt_paizhao, R.id.ac_set_btn_obd, R.id.ac_set_btn_qianzi})
     public void onViewClicked(View view) {
         switch (view.getId()) {
+            case R.id.ac_set_btn_qianzi:
+                //签字图片采集
+                Intent i22a = new Intent(this, FingerActivity.class);
+                startActivity(i22a);
+                break;
             case R.id.ac_set_btn_finger:
                 //指纹测试
                 Intent i22 = new Intent(this, FingerActivity.class);
@@ -446,56 +454,59 @@ public class SettingActivity extends BaseActivity implements AdapterView.OnItemC
         }
         pop.dismiss();
     }
+
     private void chackBluetooth() {
         defaultAdapter = BluetoothAdapter.getDefaultAdapter();
-        if (defaultAdapter==null) {
+        if (defaultAdapter == null) {
 //            show_tv.setText("本机不支持蓝牙功能");
-            Toast.makeText(this,"本机不支持蓝牙功能",Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "本机不支持蓝牙功能", Toast.LENGTH_SHORT).show();
             return;
         }
         if (!defaultAdapter.isEnabled()) {
 //            show_tv.setText("有蓝牙功能，还没打开");
-            Toast.makeText(this,"有蓝牙功能，还没打开",Toast.LENGTH_SHORT).show();
-            AlertDialog.Builder builder =new AlertDialog.Builder(this);
+            Toast.makeText(this, "有蓝牙功能，还没打开", Toast.LENGTH_SHORT).show();
+            AlertDialog.Builder builder = new AlertDialog.Builder(this);
 
             builder.setTitle("提示");
             builder.setMessage("蓝牙设备没打开，是否打开");
-            builder.setNegativeButton("取消",null);
+            builder.setNegativeButton("取消", null);
             builder.setPositiveButton("确定", new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialogInterface, int i) {
-                    Intent intent =new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
-                    startActivityForResult(intent,100);
+                    Intent intent = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
+                    startActivityForResult(intent, 100);
                 }
             });
             builder.show();
 
-        }else {
-            Toast.makeText(this,"蓝牙已开启",Toast.LENGTH_SHORT).show();
+        } else {
+            Toast.makeText(this, "蓝牙已开启", Toast.LENGTH_SHORT).show();
 //            show_tv.setText("蓝牙已开启");
         }
     }
+
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if (requestCode==100&&resultCode== this.RESULT_OK) {
-            Toast.makeText(this,"蓝牙已开启",Toast.LENGTH_SHORT).show();
+        if (requestCode == 100 && resultCode == this.RESULT_OK) {
+            Toast.makeText(this, "蓝牙已开启", Toast.LENGTH_SHORT).show();
 //            show_tv.setText("蓝牙已开启");
         }
     }
-//    public void onClick(View view) {
+
+    //    public void onClick(View view) {
 //        getBondBluetooth();
 //    }
     private void getBondBluetooth() {
         Set<BluetoothDevice> bondedDevices = defaultAdapter.getBondedDevices();
 
 
-        List<String> list =new ArrayList<>();
+        List<String> list = new ArrayList<>();
 
-        for (BluetoothDevice bond:bondedDevices) {
+        for (BluetoothDevice bond : bondedDevices) {
 
-            String msg ="设备名称"+bond.getName()+"\n设备地址"+bond.getAddress();
-            Log.e("tag",msg);
+            String msg = "设备名称" + bond.getName() + "\n设备地址" + bond.getAddress();
+            Log.e("tag", msg);
             list.add(msg);
         }
 //        ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, list);
