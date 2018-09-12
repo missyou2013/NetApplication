@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/gonggao_height"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3" >
+
+            <ImageView
+                android:id="@+id/im_shequ"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/left_margin"
+                android:background="@mipmap/ic_launcher" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7" >
+
+            <TextView
+                android:id="@+id/shequ_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="TextView"
+                android:textColor="@color/gray_shen"
+                android:textSize="@dimen/ac_textsize15sp" />
+
+            <TextView
+                android:id="@+id/shequ_texttop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/shequ_time"
+                android:layout_alignLeft="@+id/shequ_time"
+                android:layout_marginBottom="10dp"
+                android:text="3333333333333333333"
+                android:singleLine="true"
+                android:textSize="@dimen/ac_textsize16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/shequ_textbottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/shequ_time"
+                android:layout_below="@+id/shequ_time"
+                android:layout_marginTop="10dp"
+                  android:singleLine="true"
+                android:text="TextView"
+                android:textSize="@dimen/ac_textsize15sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

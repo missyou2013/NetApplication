@@ -1,0 +1,898 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/set_bg"
+    android:orientation="vertical"
+    >
+    <!--路试-->
+    <include layout="@layout/top_title"></include>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ac_car_details_height"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="0.5"
+                        android:gravity="center_vertical"
+                        android:text="检测员:"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/ac_cardetails_font_size"/>
+
+                    <TextView
+                        android:id="@+id/ac_lushi_jianceyuan"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="1"
+                        android:drawableRight="@mipmap/np_numberpicker_down_normal_holo_dark"
+                        android:gravity="center_vertical|center"
+                        android:hint="请选择检测员"
+                        android:maxLines="1"
+                        android:textColor="@color/red"
+                        android:textSize="23dp"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_1"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ac_car_details_height"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="0.5"
+                        android:gravity="center_vertical"
+                        android:text="@string/ac_cardetails_chepaihaoma"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/ac_cardetails_font_size"/>
+
+                    <TextView
+                        android:id="@+id/ac_lushi_chepai_haoma"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|left"
+                        android:text=""
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/ac_cardetails_font_size"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_1"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ac_car_details_height"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="0.5"
+                        android:gravity="center_vertical"
+                        android:text="@string/ac_cardetails_haopailiexing"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/ac_cardetails_font_size"/>
+
+                    <TextView
+                        android:id="@+id/ac_lushi_haopaileixing"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|left"
+                        android:maxLines="1"
+                        android:text=""
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/ac_cardetails_font_size"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_1"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ac_car_details_height"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="0.5"
+                        android:gravity="center_vertical"
+                        android:text="@string/ac_lushi_chedao"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/ac_cardetails_font_size"/>
+
+                    <TextView
+                        android:id="@+id/ac_lushi_chedao"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="1"
+                        android:drawableRight="@mipmap/np_numberpicker_down_normal_holo_dark"
+                        android:gravity="center_vertical|center"
+                        android:maxLines="1"
+                        android:text="1"
+                        android:textColor="@color/red"
+                        android:textSize="23dp"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_1"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ac_car_details_height"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="0.5"
+                        android:gravity="center_vertical"
+                        android:text="@string/ac_cardetails_vin"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/ac_cardetails_font_size"/>
+
+                    <TextView
+                        android:id="@+id/ac_lushi_vin"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|left"
+                        android:maxLines="1"
+                        android:text=""
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/ac_cardetails_font_size"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_1"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ac_car_details_height"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="0.5"
+                        android:gravity="center_vertical"
+                        android:text="@string/ac_cardetails_jianyanliushui"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/ac_cardetails_font_size"/>
+
+                    <TextView
+                        android:id="@+id/ac_lushi_jianyanliushui"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|left"
+                        android:text=""
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/ac_cardetails_font_size"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_1"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ac_car_details_height"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="0.5"
+                        android:gravity="center_vertical"
+                        android:text="@string/ac_cardetails_jianyancishu"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/ac_cardetails_font_size"/>
+
+                    <TextView
+                        android:id="@+id/ac_lushi_jianyancishu"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|left"
+                        android:text="1"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/ac_cardetails_font_size"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_1"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="0.5"
+                        android:gravity="center_vertical"
+                        android:text="@string/ac_lushi_chushudu"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/ac_cardetails_font_size"/>
+
+                    <EditText
+                        android:id="@+id/ac_lushi_chusudu"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="1.1"
+                        android:gravity="left|bottom"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/ac_cardetails_font_size"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_1"
+                    android:visibility="gone"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="0.5"
+                        android:gravity="center_vertical"
+                        android:text="车道宽度:"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/ac_cardetails_font_size"/>
+
+                    <EditText
+                        android:id="@+id/ac_lushi_zongshijian"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="1.1"
+                        android:gravity="left|bottom"
+                        android:singleLine="true"
+
+                        android:text="2.5"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/ac_cardetails_font_size"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_1"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="0.5"
+                        android:gravity="center_vertical"
+                        android:text="@string/ac_lushi_zhidong_juli"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/ac_cardetails_font_size"/>
+
+                    <EditText
+                        android:id="@+id/ac_lushi_zhidong_juli"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="1.1"
+                        android:gravity="left|bottom"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/ac_cardetails_font_size"/>
+
+                    <TextView
+                        android:id="@+id/ac_lushi_zhidong_juli_hege"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="0.6"
+                        android:drawableRight="@mipmap/np_numberpicker_down_normal_holo_dark"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="@string/ac_lushi_hege"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/ac_waijian_font_size_15"
+                        android:visibility="gone"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_1"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="0.5"
+                        android:gravity="center_vertical"
+                        android:text="@string/ac_lushi_xietiao_shijian"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/ac_cardetails_font_size"/>
+
+                    <EditText
+                        android:id="@+id/ac_lushi_xietiao_shijian"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="1.1"
+                        android:gravity="left|bottom"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/ac_cardetails_font_size"/>
+
+                    <TextView
+                        android:id="@+id/ac_lushi_xietiao_shijian_hege"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="0.4"
+                        android:drawableRight="@mipmap/np_numberpicker_down_normal_holo_dark"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="@string/ac_lushi_hege"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/ac_waijian_font_size_15"
+                        android:visibility="gone"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_1"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="0.5"
+                        android:gravity="center_vertical"
+                        android:text="@string/ac_lushi_mfdd"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/ac_cardetails_font_size"/>
+
+                    <EditText
+                        android:id="@+id/ac_lushi_mfdd"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="1.1"
+                        android:gravity="left|bottom"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/ac_cardetails_font_size"/>
+
+
+                    <TextView
+                        android:id="@+id/ac_lushi_mfdd_hege"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="0.4"
+                        android:drawableRight="@mipmap/np_numberpicker_down_normal_holo_dark"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="@string/ac_lushi_hege"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/ac_waijian_font_size_15"
+                        android:visibility="gone"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_1"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="0.5"
+                        android:text="@string/ac_lushi_max_jiansudu"
+                        android:textColor="@color/black"
+                        android:textSize="17sp"/>
+
+                    <EditText
+                        android:id="@+id/ac_lushi_max_jiansudu"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="1.1"
+                        android:gravity="left|bottom"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/ac_cardetails_font_size"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_1"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="0.5"
+                        android:gravity="center_vertical"
+                        android:text="@string/ac_lushi_zhidong_wendingxing"
+                        android:textColor="@color/black"
+                        android:textSize="17sp"/>
+
+                    <TextView
+                        android:id="@+id/ac_lushi_zhidong_wendingxing"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="1"
+                        android:drawableRight="@mipmap/np_numberpicker_down_normal_holo_dark"
+                        android:gravity="center_vertical|center"
+                        android:maxLines="1"
+                        android:textColor="@color/red"
+                        android:textSize="23dp"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_1"/>
+
+                <Button
+                    android:id="@+id/ac_lushi_btn_xiangmu_kaishi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/waijian_wancheng_bg"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/ac_lushi_xiangmu_kaishi"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_1"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/ac_lushi_btn_wanchen_22_middle"
+                        android:layout_width="60dp"
+                        android:layout_height="1dp"
+                        android:layout_centerInParent="true"></TextView>
+
+
+                    <Button
+                        android:id="@+id/ac_lushi_zhidong_kaishi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/ac_lushi_btn_wanchen_22_middle"
+                        android:layout_toStartOf="@+id/ac_lushi_btn_wanchen_22_middle"
+                        android:background="@drawable/my_shape"
+                        android:gravity="center"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:text="@string/ac_lushi_zhidong_kaishi"
+                        android:textSize="18sp"></Button>
+
+
+                    <Button
+                        android:id="@+id/ac_lushi_btn_wanchen_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="0dp"
+                        android:layout_toRightOf="@+id/ac_lushi_btn_wanchen_22_middle"
+                        android:background="@drawable/my_shape"
+                        android:gravity="center"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:text="结束"
+                        android:textSize="18sp"/>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/ac_lushi_tv_paizhao_0_statement"
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="上传制动开始照片"
+                        android:textColor="@color/red"
+                        android:textSize="16sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/ac_lushi_tv_paizhao_1_statement"
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="上传制动结束照片"
+                        android:textColor="@color/red"
+                        android:textSize="16sp"
+                        />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_1"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ac_car_details_height"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="0.5"
+                        android:gravity="center_vertical"
+                        android:text="@string/ac_lushi_podao_podu"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/ac_cardetails_font_size"/>
+
+                    <TextView
+                        android:id="@+id/ac_lushi_podao_podu"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="0.7"
+                        android:drawableRight="@mipmap/np_numberpicker_down_normal_holo_dark"
+                        android:gravity="center_vertical|center"
+                        android:maxLines="1"
+
+                        android:textColor="@color/red"
+                        android:textSize="23dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/ac_lushi_podao_podu_hege"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="0.4"
+                        android:drawableRight="@mipmap/np_numberpicker_down_normal_holo_dark"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="@string/ac_lushi_hege"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/ac_waijian_font_size_15"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_1"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp">
+
+                    <Button
+                        android:id="@+id/ac_lushi_zhuche_kaishi_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_toLeftOf="@+id/ac_lushi_view_mm"
+                        android:layout_toStartOf="@+id/ac_lushi_view_mm"
+                        android:background="@drawable/my_shape"
+                        android:gravity="center"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:text="@string/ac_lushi_zhuche_kaishi"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:id="@+id/ac_lushi_view_mm"
+                        android:layout_width="60dp"
+                        android:layout_height="1dp"
+                        android:layout_centerInParent="true"></TextView>
+
+
+                    <Button
+                        android:id="@+id/ac_lushi_btn_wanchen_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/ac_lushi_view_mm"
+                        android:background="@drawable/my_shape"
+                        android:gravity="center"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:text="结束"
+                        android:textSize="18sp"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/ac_lushi_tv_paizhao_2_statement"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:gravity="center"
+                    android:text="上传照片"
+                    android:textColor="@color/red"
+                    android:textSize="16sp"
+                    android:visibility="gone"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_1"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="0.5"
+                        android:gravity="center_vertical"
+                        android:text="@string/ac_lushi_chesubiao"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/ac_waijian_font_size_18"/>
+
+                    <EditText
+                        android:id="@+id/ac_lushi_chesubiao_et"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="0.7"
+                        android:gravity="left|bottom"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/ac_cardetails_font_size"/>
+
+                    <TextView
+                        android:id="@+id/ac_lushi_chesubiao_hege"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="0.4"
+                        android:drawableRight="@mipmap/np_numberpicker_down_normal_holo_dark"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="@string/ac_lushi_hege"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/ac_waijian_font_size_15"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_1"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp">
+
+                    <Button
+                        android:id="@+id/ac_lushi_chesu_kaishi_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_toLeftOf="@+id/ac_lushi_btn_wanchen_2_middle"
+                        android:layout_toStartOf="@+id/ac_lushi_btn_wanchen_2_middle"
+                        android:background="@drawable/my_shape"
+                        android:gravity="center"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:text="@string/ac_lushi_chesu_kaishi"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:id="@+id/ac_lushi_btn_wanchen_2_middle"
+                        android:layout_width="60dp"
+                        android:layout_height="1dp"
+                        android:layout_centerInParent="true"></TextView>
+
+
+                    <Button
+                        android:id="@+id/ac_lushi_btn_wanchen_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/ac_lushi_btn_wanchen_2_middle"
+                        android:background="@drawable/my_shape"
+                        android:gravity="center"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:text="结束"
+                        android:textSize="18sp"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/ac_lushi_tv_paizhao_3_statement"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:gravity="center"
+                    android:text="上传照片"
+                    android:textColor="@color/red"
+                    android:textSize="16sp"
+                    android:visibility="gone"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_1"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="5dp">
+
+                    <Button
+                        android:id="@+id/ac_lushi_btn_last_cancle"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_toLeftOf="@+id/ac_lushi_last_middle"
+                        android:layout_toStartOf="@+id/ac_lushi_last_middle"
+                        android:background="@drawable/waijian_wancheng_bg"
+                        android:gravity="center"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:text="@string/cancle_activity_setting"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:id="@+id/ac_lushi_last_middle"
+                        android:layout_width="60dp"
+                        android:layout_height="1dp"
+                        android:layout_centerInParent="true"></TextView>
+
+
+                    <Button
+                        android:id="@+id/ac_lushi_btn_last_end"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/ac_lushi_last_middle"
+                        android:background="@drawable/waijian_wancheng_bg"
+                        android:gravity="center"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:text="@string/ac_lushi_xiangmu_end"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

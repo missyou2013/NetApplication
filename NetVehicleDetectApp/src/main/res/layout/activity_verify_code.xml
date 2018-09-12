@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/set_bg"
+    android:orientation="vertical"
+    >
+    <!--校验码验证-->
+    <include layout="@layout/top_title"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/set_top"
+            android:text="@string/jiqima_activity_setting"
+            android:textSize="@dimen/set_fot_20"/>
+
+        <EditText
+            android:id="@+id/ac_verify_code_jiqima"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@mipmap/et_bg"
+            android:focusable="false"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:text=""
+            android:textSize="@dimen/set_fot_16"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="20dp"
+            android:text="@string/shouquanma_activity_setting"
+            android:textSize="@dimen/set_fot_20"/>
+
+        <EditText
+            android:id="@+id/ac_verify_code_shouquanma"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@mipmap/et_bg"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:hint="请输入授权码"
+            android:textSize="@dimen/set_fot_16"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/ac_verify_code_wanchen"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/waijian_wancheng_bg"
+        android:gravity="center"
+        android:text="@string/btn_wanchen"
+        android:textColor="@color/white"
+        android:textSize="@dimen/ac_waijian_font_size_20"></Button>
+</LinearLayout>

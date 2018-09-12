@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/Ble_app_test_001" />
+            <option value="$PROJECT_DIR$/FastBleLib" />
+            <option value="$PROJECT_DIR$/NetVehicleDetectApp" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/app_002" />
+            <option value="$PROJECT_DIR$/app_BluetoothLELibrary" />
+            <option value="$PROJECT_DIR$/app_fastBleLib" />
+            <option value="$PROJECT_DIR$/app_finger" />
+            <option value="$PROJECT_DIR$/ble_test_110" />
+            <option value="$PROJECT_DIR$/bluetooth-manager-lib" />
+            <option value="$PROJECT_DIR$/imageeditlibrary" />
+            <option value="$PROJECT_DIR$/library" />
+            <option value="$PROJECT_DIR$/library_ble_22" />
+            <option value="$PROJECT_DIR$/sample_app" />
+            <option value="$PROJECT_DIR$/scan" />
+            <option value="$PROJECT_DIR$/wuxi_app" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

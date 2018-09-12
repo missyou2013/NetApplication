@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <!--外检结果-->
+    <include layout="@layout/top_title"></include>
+    <ExpandableListView
+        android:id="@+id/ex"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:groupIndicator="@null">
+    </ExpandableListView>
+</LinearLayout>

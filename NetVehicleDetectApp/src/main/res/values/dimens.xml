@@ -1,0 +1,42 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="set_top">10dp</dimen>
+    <dimen name="set_top_5">5dp</dimen>
+    <dimen name="set_fot_15">15sp</dimen>
+    <dimen name="set_fot_16">16sp</dimen>
+    <dimen name="set_fot_18">18sp</dimen>
+    <dimen name="set_fot_20">20sp</dimen>
+    <dimen name="set_height_30">30dp</dimen>
+    <dimen name="set_height_35">35dp</dimen>
+    <dimen name="set_height_40">40dp</dimen>
+    <dimen name="set_height_45">45dp</dimen>
+    <dimen name="set_height_50">50dp</dimen>
+    <!-- 公告item高度 -->
+    <dimen name="gonggao_height">120dp</dimen>
+    <!-- 距离左边距 -->
+    <dimen name="left_margin">20dp</dimen>
+    <!-- 距离右边距 -->
+    <dimen name="right_margin">20dp</dimen>
+    <dimen name="ac_textsize15sp">15sp</dimen>
+    <dimen name="ac_textsize16sp">16sp</dimen>
+    <!-- 车辆详情每个item的高度 -->
+    <dimen name="ac_car_details_height">30dp</dimen>
+
+    <dimen name="ac_cardetails_font_size">19sp</dimen>
+    <dimen name="ac_recheck_font_size">16sp</dimen>
+
+    <dimen name="ac_waijian_font_size_20">20sp</dimen>
+    <dimen name="ac_waijian_font_size_22">22sp</dimen>
+    <dimen name="ac_waijian_font_size_24">24sp</dimen>
+    <dimen name="ac_waijian_font_size_26">26sp</dimen>
+    <dimen name="ac_waijian_font_size_18">18sp</dimen>
+    <dimen name="ac_waijian_font_size_15">15sp</dimen>
+    <dimen name="design_fab_size_normal" tools:ignore="PrivateResource">60dp</dimen>
+    <dimen name="fab_size_normal">80dp</dimen>
+    <dimen name="fab_size_mini">50dp</dimen>
+
+    <dimen name="news_setting_w">50dp</dimen>
+
+    <dimen name="home_btn_w">120dp</dimen>
+    <dimen name="home_btn_h">120dp</dimen>
+</resources>

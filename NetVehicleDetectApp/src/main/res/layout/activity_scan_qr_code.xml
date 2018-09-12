@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <cn.bingoogolapple.qrcode.zxing.ZXingView
+        android:id="@+id/ac_scan_zxingview"
+        style="@style/MatchMatch"
+        app:qrcv_animTime="1000"
+        app:qrcv_borderColor="@android:color/white"
+        app:qrcv_borderSize="1dp"
+        app:qrcv_cornerColor="@color/red"
+        app:qrcv_cornerLength="20dp"
+        app:qrcv_cornerSize="3dp"
+        app:qrcv_isBarcode="true"
+        app:qrcv_maskColor="#33FFFFFF"
+        app:qrcv_rectWidth="80dp"
+        app:qrcv_barcodeRectHeight="380dp"
+        app:qrcv_scanLineColor="@color/red"
+        app:qrcv_scanLineSize="1dp"
+        app:qrcv_isShowDefaultScanLineDrawable="true"
+        app:qrcv_topOffset="120dp"
+        android:layout_width="match_parent" />
+
+    <TextView
+        android:id="@+id/ac_scan_tv_middle"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="0dp"
+        android:background="@color/blue"
+        android:visibility="invisible"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="invisible"
+        android:layout_marginTop="30dp"
+        android:gravity="right"
+        android:layout_marginBottom="30dp"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/ac_scan_btn_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="30dp"
+
+            android:gravity="center"
+            android:text="开  灯"
+            android:textColor="@color/white"
+            android:textSize="@dimen/ac_waijian_font_size_20"></Button>
+
+        <Button
+            android:id="@+id/ac_scan_btn_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="30dp"
+
+            android:gravity="center"
+            android:text="关  灯"
+            android:textColor="@color/white"
+            android:textSize="@dimen/ac_waijian_font_size_20"></Button>
+    </LinearLayout>
+</RelativeLayout>

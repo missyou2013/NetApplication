@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/set_bg"
+              android:orientation="vertical">
+    <!--设置-->
+
+
+    <include layout="@layout/top_title"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/news_ac_setting_tv_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:text="名称："
+                    android:textSize="@dimen/set_fot_20"/>
+
+                <EditText
+                    android:id="@+id/news_ac_setting_et_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/set_height_45"
+                    android:layout_below="@+id/news_ac_setting_tv_1"
+                    android:layout_marginRight="5dp"
+                    android:background="@mipmap/et_bg"
+                    android:text="青岛机动车检测有限公司"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/set_fot_20"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/news_ac_setting_tv_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:text="单位机构代码："
+
+                    android:textSize="@dimen/set_fot_20"/>
+
+                <EditText
+                    android:id="@+id/news_ac_setting_et_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/set_height_45"
+                    android:layout_below="@+id/news_ac_setting_tv_2"
+                    android:layout_marginRight="5dp"
+                    android:background="@mipmap/et_bg"
+                    android:text=" "
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/set_fot_20"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/news_ac_setting_tv_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:text="地区代码："
+
+                    android:textSize="@dimen/set_fot_20"/>
+
+                <EditText
+                    android:id="@+id/news_ac_setting_et_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/set_height_45"
+                    android:layout_below="@+id/news_ac_setting_tv_3"
+                    android:layout_marginRight="5dp"
+                    android:background="@mipmap/et_bg"
+                    android:text="266600"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/set_fot_20"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/news_ac_setting_tv_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:text="接口地址："
+
+                    android:textSize="@dimen/set_fot_20"/>
+
+                <EditText
+                    android:id="@+id/news_ac_setting_et_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/set_height_45"
+                    android:layout_below="@+id/news_ac_setting_tv_4"
+                    android:layout_marginRight="5dp"
+                    android:background="@mipmap/et_bg"
+                    android:text="http://"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/set_fot_20"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/news_ac_setting_tv_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:text="接口序列号："
+
+                    android:textSize="@dimen/set_fot_20"/>
+
+                <EditText
+                    android:id="@+id/news_ac_setting_et_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/set_height_45"
+                    android:layout_below="@+id/news_ac_setting_tv_5"
+                    android:layout_marginRight="5dp"
+                    android:background="@mipmap/et_bg"
+                    android:text="7F1909090100B9ABCBBE2DBCECD1E9"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/set_fot_20"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/news_ac_setting_tv_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:text="终端标识："
+
+                    android:textSize="@dimen/set_fot_20"/>
+
+                <EditText
+                    android:id="@+id/news_ac_setting_et_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/set_height_45"
+                    android:layout_below="@+id/news_ac_setting_tv_6"
+                    android:layout_marginRight="5dp"
+                    android:background="@mipmap/et_bg"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/set_fot_20"/>
+            </RelativeLayout>
+
+
+            <Button
+                android:id="@+id/news_ac_set_btn_save"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/my_shape"
+                android:gravity="center"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="@string/save_activity_setting"
+                android:textSize="18sp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/set_bg"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/top_title"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_height="50dp"></include>
+
+    <ImageView
+        android:id="@+id/ac_wai_rotate_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_centerInParent="true"
+        android:scaleType="fitCenter"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/ac_wai_rotate_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/ac_wai_rotate_btn_rotate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/waijian_wancheng_bg"
+            android:gravity="center"
+            android:text="编辑图片"
+            android:textColor="@color/white"
+            android:textSize="@dimen/ac_waijian_font_size_20"/>
+
+        <Button
+            android:id="@+id/ac_wai_rotate_btn_upload"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/waijian_wancheng_bg"
+            android:gravity="center"
+            android:text="图片上传"
+            android:textColor="@color/white"
+            android:textSize="@dimen/ac_waijian_font_size_20"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

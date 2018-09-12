@@ -1,0 +1,1 @@
+include ':app_finger', ':NetVehicleDetectApp', ':library', ':imageeditlibrary', ':Ble_app_test_001', ':ble_test_110', ':wuxi_app', 'scan', ':app_fastBleLib', ':FastBleLib', ':app_BluetoothLELibrary', ':app_002', ':bluetooth-manager-lib', ':app', ':sample_app', ':library_ble_22'

@@ -1,0 +1,2120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/set_bg"
+
+    android:orientation="vertical">
+
+    <!--外检拍照-->
+    <!-- <include layout="@layout/top_title"></include>-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/login_bg_blue"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/title_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+
+            android:gravity="center"
+            android:maxLines="1"
+            android:maxWidth="260.0dp"
+            android:text="外检项目拍照"
+            android:textColor="@color/white"
+            android:textSize="20sp"/>
+
+        <ImageView
+            android:id="@+id/iv_headtip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2.0dp"
+            android:layout_marginRight="2.0dp"
+            android:layout_marginTop="3.0dp"
+            android:layout_toRightOf="@id/title_txt"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:gravity="center_vertical"
+                    android:text="@string/ac_waijian_paizhao_zuoqianfang_xieshi45"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/ac_cardetails_font_size"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp">
+
+                    <TextView
+                        android:id="@+id/ac_waijian_txt_zuoqianfang_45"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center"
+                        android:text="@string/ac_waijian_paizhao_weipaizhao"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/ac_waijian_font_size_22"/>
+
+                    <Button
+                        android:id="@+id/ac_waijian_btn_zuoqianfang_45_preview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginRight="5dp"
+                        android:layout_toLeftOf="@+id/ac_waijian_btn_zuoqianfang_45"
+                        android:background="@drawable/waijian_btn_bg"
+                        android:gravity="center"
+                        android:text="@string/activity_daijian_preview"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/ac_waijian_font_size_20"/>
+
+                    <Button
+                        android:id="@+id/ac_waijian_btn_zuoqianfang_45"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/waijian_btn_bg"
+                        android:gravity="center"
+                        android:text="@string/ac_waijian_paizhao"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/ac_waijian_font_size_20"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_1"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/ac_waijian_paizhao_youhoufang_xieshi45"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/ac_cardetails_font_size"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp">
+
+                    <TextView
+                        android:id="@+id/ac_waijian_txt_youhoufang_45"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center"
+                        android:text="@string/ac_waijian_paizhao_weipaizhao"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/ac_waijian_font_size_22"/>
+
+                    <Button
+                        android:id="@+id/ac_waijian_btn_youhoufang_45_preview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginRight="5dp"
+                        android:layout_toLeftOf="@+id/ac_waijian_btn_youhoufang_45"
+                        android:background="@drawable/waijian_btn_bg"
+                        android:gravity="center"
+                        android:text="@string/activity_daijian_preview"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/ac_waijian_font_size_20"/>
+
+                    <Button
+                        android:id="@+id/ac_waijian_btn_youhoufang_45"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/waijian_btn_bg"
+                        android:gravity="center"
+                        android:text="@string/ac_waijian_paizhao"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/ac_waijian_font_size_20"
+
+                        />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_1"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/ac_waijian_paizhao_shibiedaima"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/ac_cardetails_font_size"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp">
+
+                    <TextView
+                        android:id="@+id/ac_waijian_txt_shibiedaima"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center"
+                        android:text="@string/ac_waijian_paizhao_weipaizhao"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/ac_waijian_font_size_22"/>
+
+                    <Button
+                        android:id="@+id/ac_waijian_btn_shibiedaima_preview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginRight="5dp"
+                        android:layout_toLeftOf="@+id/ac_waijian_btn_shibiedaima"
+                        android:background="@drawable/waijian_btn_bg"
+                        android:gravity="center"
+                        android:text="@string/activity_daijian_preview"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/ac_waijian_font_size_20"/>
+
+                    <Button
+                        android:id="@+id/ac_waijian_btn_shibiedaima"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/waijian_btn_bg"
+                        android:gravity="center"
+                        android:text="@string/ac_waijian_paizhao"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/ac_waijian_font_size_20"
+
+                        />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_1"/>
+
+                <LinearLayout
+                    android:id="@+id/ac_waijian_lay_anquandai"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/ac_waijian_paizhao_anquandai"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/ac_cardetails_font_size"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp">
+
+                        <TextView
+                            android:id="@+id/ac_waijian_txt_anquandai"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="center"
+                            android:text="@string/ac_waijian_paizhao_weipaizhao"
+                            android:textColor="@color/red"
+                            android:textSize="@dimen/ac_waijian_font_size_22"/>
+
+                        <Button
+                            android:id="@+id/ac_waijian_btn_anquandai_preview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginRight="5dp"
+                            android:layout_toLeftOf="@+id/ac_waijian_btn_anquandai"
+                            android:background="@drawable/waijian_btn_bg"
+                            android:gravity="center"
+                            android:text="@string/activity_daijian_preview"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/ac_waijian_font_size_20"/>
+
+                        <Button
+                            android:id="@+id/ac_waijian_btn_anquandai"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="5dp"
+                            android:background="@drawable/waijian_btn_bg"
+                            android:gravity="center"
+                            android:text="@string/ac_waijian_paizhao"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/ac_waijian_font_size_20"
+
+                            />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/gray_1"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ac_waijian_xingshi_jilu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/ac_waijian_paizhao_xingshi_jilu"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/ac_cardetails_font_size"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp">
+
+                        <TextView
+                            android:id="@+id/ac_waijian_txt_xingshi_jilu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="center"
+                            android:text="@string/ac_waijian_paizhao_weipaizhao"
+                            android:textColor="@color/red"
+                            android:textSize="@dimen/ac_waijian_font_size_22"/>
+
+                        <Button
+                            android:id="@+id/ac_waijian_btn_xingshi_jilu_preview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginRight="5dp"
+                            android:layout_toLeftOf="@+id/ac_waijian_btn_xingshi_jilu"
+                            android:background="@drawable/waijian_btn_bg"
+                            android:gravity="center"
+                            android:text="@string/activity_daijian_preview"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/ac_waijian_font_size_20"/>
+
+                        <Button
+                            android:id="@+id/ac_waijian_btn_xingshi_jilu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="5dp"
+                            android:background="@drawable/waijian_btn_bg"
+                            android:gravity="center"
+                            android:text="@string/ac_waijian_paizhao"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/ac_waijian_font_size_20"
+
+                            />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/gray_1"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ac_waijian_miehuoqi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/ac_waijian_paizhao_miehuoqi"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/ac_cardetails_font_size"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp">
+
+                        <TextView
+                            android:id="@+id/ac_waijian_txt_miehuoqi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="center"
+                            android:text="@string/ac_waijian_paizhao_weipaizhao"
+                            android:textColor="@color/red"
+                            android:textSize="@dimen/ac_waijian_font_size_22"/>
+
+                        <Button
+                            android:id="@+id/ac_waijian_btn_miehuoqi_preview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginRight="5dp"
+                            android:layout_toLeftOf="@+id/ac_waijian_btn_miehuoqi"
+                            android:background="@drawable/waijian_btn_bg"
+                            android:gravity="center"
+                            android:text="@string/activity_daijian_preview"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/ac_waijian_font_size_20"/>
+
+                        <Button
+                            android:id="@+id/ac_waijian_btn_miehuoqi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="5dp"
+                            android:background="@drawable/waijian_btn_bg"
+                            android:gravity="center"
+                            android:text="@string/ac_waijian_paizhao"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/ac_waijian_font_size_20"
+
+                            />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/gray_1"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ac_waijian_chexiangneibu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/ac_waijian_paizhao_chexiangneibu"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/ac_cardetails_font_size"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp">
+
+                        <TextView
+                            android:id="@+id/ac_waijian_txt_chexiangneibu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="center"
+                            android:text="@string/ac_waijian_paizhao_weipaizhao"
+                            android:textColor="@color/red"
+                            android:textSize="@dimen/ac_waijian_font_size_22"/>
+
+                        <Button
+                            android:id="@+id/ac_waijian_btn_chexiangneibu_preview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginRight="5dp"
+                            android:layout_toLeftOf="@+id/ac_waijian_btn_chexiangneibu"
+                            android:background="@drawable/waijian_btn_bg"
+                            android:gravity="center"
+                            android:text="@string/activity_daijian_preview"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/ac_waijian_font_size_20"/>
+
+                        <Button
+                            android:id="@+id/ac_waijian_btn_chexiangneibu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="5dp"
+                            android:background="@drawable/waijian_btn_bg"
+                            android:gravity="center"
+                            android:text="@string/ac_waijian_paizhao"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/ac_waijian_font_size_20"
+
+                            />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/gray_1"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ac_waijian_cheliang_zhenghoufang"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/ac_waijian_paizhao_cheliang_zhenghoufang"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/ac_cardetails_font_size"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp">
+
+                        <TextView
+                            android:id="@+id/ac_waijian_txt_cheliang_zhenghoufang"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="center"
+                            android:text="@string/ac_waijian_paizhao_weipaizhao"
+                            android:textColor="@color/red"
+                            android:textSize="@dimen/ac_waijian_font_size_22"/>
+
+                        <Button
+                            android:id="@+id/ac_waijian_btn_cheliang_zhenghoufang_preview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginRight="5dp"
+                            android:layout_toLeftOf="@+id/ac_waijian_btn_cheliang_zhenghoufang"
+                            android:background="@drawable/waijian_btn_bg"
+                            android:gravity="center"
+                            android:text="@string/activity_daijian_preview"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/ac_waijian_font_size_20"/>
+
+                        <Button
+                            android:id="@+id/ac_waijian_btn_cheliang_zhenghoufang"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="5dp"
+                            android:background="@drawable/waijian_btn_bg"
+                            android:gravity="center"
+                            android:text="@string/ac_waijian_paizhao"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/ac_waijian_font_size_20"
+
+                            />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/gray_1"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ac_waijian_xiaochebiaopai_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/ac_waijian_paizhao_xiaochebiaopai_f_z"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/ac_cardetails_font_size"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp">
+
+                        <TextView
+                            android:id="@+id/ac_waijian_txt_xiaochebiaopai"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="center"
+                            android:text="@string/ac_waijian_paizhao_weipaizhao"
+                            android:textColor="@color/red"
+                            android:textSize="@dimen/ac_waijian_font_size_22"/>
+
+                        <Button
+                            android:id="@+id/ac_waijian_btn_xiaochebiaopai_preview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginRight="5dp"
+                            android:layout_toLeftOf="@+id/ac_waijian_btn_xiaochebiaopai"
+                            android:background="@drawable/waijian_btn_bg"
+                            android:gravity="center"
+                            android:text="@string/activity_daijian_preview"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/ac_waijian_font_size_20"/>
+
+                        <Button
+                            android:id="@+id/ac_waijian_btn_xiaochebiaopai"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="5dp"
+                            android:background="@drawable/waijian_btn_bg"
+                            android:gravity="center"
+                            android:text="@string/ac_waijian_paizhao"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/ac_waijian_font_size_20"
+
+                            />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/gray_1"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ac_waijian_xiaochebiaopai_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/ac_waijian_paizhao_xiaochebiaopai_f_f"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/ac_cardetails_font_size"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp">
+
+                        <TextView
+                            android:id="@+id/ac_waijian_txt_xiaochebiaopai2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="center"
+                            android:text="@string/ac_waijian_paizhao_weipaizhao"
+                            android:textColor="@color/red"
+                            android:textSize="@dimen/ac_waijian_font_size_22"/>
+
+                        <Button
+                            android:id="@+id/ac_waijian_btn_xiaochebiaopai_preview2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginRight="5dp"
+                            android:layout_toLeftOf="@+id/ac_waijian_btn_xiaochebiaopai2"
+                            android:background="@drawable/waijian_btn_bg"
+                            android:gravity="center"
+                            android:text="@string/activity_daijian_preview"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/ac_waijian_font_size_20"/>
+
+                        <Button
+                            android:id="@+id/ac_waijian_btn_xiaochebiaopai2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="5dp"
+                            android:background="@drawable/waijian_btn_bg"
+                            android:gravity="center"
+                            android:text="@string/ac_waijian_paizhao"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/ac_waijian_font_size_20"
+
+                            />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/gray_1"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ac_waijian_xiaochebiaopai_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/ac_waijian_paizhao_xiaochebiaopai_h_f"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/ac_cardetails_font_size"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp">
+
+                        <TextView
+                            android:id="@+id/ac_waijian_txt_xiaochebiaopai3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="center"
+                            android:text="@string/ac_waijian_paizhao_weipaizhao"
+                            android:textColor="@color/red"
+                            android:textSize="@dimen/ac_waijian_font_size_22"/>
+
+                        <Button
+                            android:id="@+id/ac_waijian_btn_xiaochebiaopai_preview3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginRight="5dp"
+                            android:layout_toLeftOf="@+id/ac_waijian_btn_xiaochebiaopai3"
+                            android:background="@drawable/waijian_btn_bg"
+                            android:gravity="center"
+                            android:text="@string/activity_daijian_preview"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/ac_waijian_font_size_20"/>
+
+                        <Button
+                            android:id="@+id/ac_waijian_btn_xiaochebiaopai3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="5dp"
+                            android:background="@drawable/waijian_btn_bg"
+                            android:gravity="center"
+                            android:text="@string/ac_waijian_paizhao"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/ac_waijian_font_size_20"
+
+                            />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/gray_1"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ac_waijian_xiaoche_biaozhideng"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/ac_waijian_paizhao_xiaoche_biaozhideng"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/ac_cardetails_font_size"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp">
+
+                        <TextView
+                            android:id="@+id/ac_waijian_txt_xiaoche_biaozhideng"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="center"
+                            android:text="@string/ac_waijian_paizhao_weipaizhao"
+                            android:textColor="@color/red"
+                            android:textSize="@dimen/ac_waijian_font_size_22"/>
+
+                        <Button
+                            android:id="@+id/ac_waijian_btn_xiaoche_biaozhideng_preview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginRight="5dp"
+                            android:layout_toLeftOf="@+id/ac_waijian_btn_xiaoche_biaozhideng"
+                            android:background="@drawable/waijian_btn_bg"
+                            android:gravity="center"
+                            android:text="@string/activity_daijian_preview"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/ac_waijian_font_size_20"/>
+
+                        <Button
+                            android:id="@+id/ac_waijian_btn_xiaoche_biaozhideng"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="5dp"
+                            android:background="@drawable/waijian_btn_bg"
+                            android:gravity="center"
+                            android:text="@string/ac_waijian_paizhao"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/ac_waijian_font_size_20"
+
+                            />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/gray_1"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ac_waijian_xiaoche_tingche_zhishipai"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/ac_waijian_paizhao_xiaoche_tingche_zhishipai"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/ac_cardetails_font_size"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp">
+
+                        <TextView
+                            android:id="@+id/ac_waijian_txt_xiaoche_tingche_zhishipai"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="center"
+                            android:text="@string/ac_waijian_paizhao_weipaizhao"
+                            android:textColor="@color/red"
+                            android:textSize="@dimen/ac_waijian_font_size_22"/>
+
+                        <Button
+                            android:id="@+id/ac_waijian_btn_xiaoche_tingche_zhishipai_preview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginRight="5dp"
+                            android:layout_toLeftOf="@+id/ac_waijian_btn_xiaoche_tingche_zhishipai"
+                            android:background="@drawable/waijian_btn_bg"
+                            android:gravity="center"
+                            android:text="@string/activity_daijian_preview"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/ac_waijian_font_size_20"/>
+
+                        <Button
+                            android:id="@+id/ac_waijian_btn_xiaoche_tingche_zhishipai"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="5dp"
+                            android:background="@drawable/waijian_btn_bg"
+                            android:gravity="center"
+                            android:text="@string/ac_waijian_paizhao"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/ac_waijian_font_size_20"
+
+                            />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/gray_1"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ac_waijian_caozong_fuzhu_fuzhu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/ac_waijian_paizhao_caozong_fuzhu"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/ac_cardetails_font_size"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp">
+
+                        <TextView
+                            android:id="@+id/ac_waijian_txt_caozong_fuzhu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="center"
+                            android:text="@string/ac_waijian_paizhao_weipaizhao"
+                            android:textColor="@color/red"
+                            android:textSize="@dimen/ac_waijian_font_size_22"/>
+
+                        <Button
+                            android:id="@+id/ac_waijian_btn_caozong_fuzhu_preview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginRight="5dp"
+                            android:layout_toLeftOf="@+id/ac_waijian_btn_caozong_fuzhu"
+                            android:background="@drawable/waijian_btn_bg"
+                            android:gravity="center"
+                            android:text="@string/activity_daijian_preview"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/ac_waijian_font_size_20"/>
+
+                        <Button
+                            android:id="@+id/ac_waijian_btn_caozong_fuzhu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="5dp"
+                            android:background="@drawable/waijian_btn_bg"
+                            android:gravity="center"
+                            android:text="@string/ac_waijian_paizhao"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/ac_waijian_font_size_20"
+
+                            />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/gray_1"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ac_waijian_fadongjihao"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/ac_waijian_paizhao_fadongjihao"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/ac_cardetails_font_size"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp">
+
+                        <TextView
+                            android:id="@+id/ac_waijian_txt_fadongjihao"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="center"
+                            android:text="@string/ac_waijian_paizhao_weipaizhao"
+                            android:textColor="@color/red"
+                            android:textSize="@dimen/ac_waijian_font_size_22"/>
+
+                        <Button
+                            android:id="@+id/ac_waijian_btn_fadongjihao_preview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginRight="5dp"
+                            android:layout_toLeftOf="@+id/ac_waijian_btn_fadongjihao"
+                            android:background="@drawable/waijian_btn_bg"
+                            android:gravity="center"
+                            android:text="@string/activity_daijian_preview"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/ac_waijian_font_size_20"/>
+
+                        <Button
+                            android:id="@+id/ac_waijian_btn_fadongjihao"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="5dp"
+                            android:background="@drawable/waijian_btn_bg"
+                            android:gravity="center"
+                            android:text="@string/ac_waijian_paizhao"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/ac_waijian_font_size_20"
+
+                            />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/gray_1"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ac_waijian_fadongjicang"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/ac_waijian_paizhao_fadongjicang"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/ac_cardetails_font_size"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp">
+
+                        <TextView
+                            android:id="@+id/ac_waijian_txt_fadongjicang"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="center"
+                            android:text="@string/ac_waijian_paizhao_weipaizhao"
+                            android:textColor="@color/red"
+                            android:textSize="@dimen/ac_waijian_font_size_22"/>
+
+                        <Button
+                            android:id="@+id/ac_waijian_btn_fadongjicang_preview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginRight="5dp"
+                            android:layout_toLeftOf="@+id/ac_waijian_btn_fadongjicang"
+                            android:background="@drawable/waijian_btn_bg"
+                            android:gravity="center"
+                            android:text="@string/activity_daijian_preview"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/ac_waijian_font_size_20"/>
+
+                        <Button
+                            android:id="@+id/ac_waijian_btn_fadongjicang"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="5dp"
+                            android:background="@drawable/waijian_btn_bg"
+                            android:gravity="center"
+                            android:text="@string/ac_waijian_paizhao"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/ac_waijian_font_size_20"
+
+                            />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/gray_1"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ac_waijian_yingjichui"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/ac_waijian_paizhao_yingjichui"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/ac_cardetails_font_size"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp">
+
+                        <TextView
+                            android:id="@+id/ac_waijian_txt_yingjichui"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="center"
+                            android:text="@string/ac_waijian_paizhao_weipaizhao"
+                            android:textColor="@color/red"
+                            android:textSize="@dimen/ac_waijian_font_size_22"/>
+
+                        <Button
+                            android:id="@+id/ac_waijian_btn_yingjichui_preview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginRight="5dp"
+                            android:layout_toLeftOf="@+id/ac_waijian_btn_yingjichui"
+                            android:background="@drawable/waijian_btn_bg"
+                            android:gravity="center"
+                            android:text="@string/activity_daijian_preview"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/ac_waijian_font_size_20"/>
+
+                        <Button
+                            android:id="@+id/ac_waijian_btn_yingjichui"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="5dp"
+                            android:background="@drawable/waijian_btn_bg"
+                            android:gravity="center"
+                            android:text="@string/ac_waijian_paizhao"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/ac_waijian_font_size_20"
+
+                            />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/gray_1"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ac_waijian_jijiuxiang"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/ac_waijian_paizhao_jijiuxiang"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/ac_cardetails_font_size"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp">
+
+                        <TextView
+                            android:id="@+id/ac_waijian_txt_jijiuxiang"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="center"
+                            android:text="@string/ac_waijian_paizhao_weipaizhao"
+                            android:textColor="@color/red"
+                            android:textSize="@dimen/ac_waijian_font_size_22"/>
+
+                        <Button
+                            android:id="@+id/ac_waijian_btn_jijiuxiang_preview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginRight="5dp"
+                            android:layout_toLeftOf="@+id/ac_waijian_btn_jijiuxiang"
+                            android:background="@drawable/waijian_btn_bg"
+                            android:gravity="center"
+                            android:text="@string/activity_daijian_preview"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/ac_waijian_font_size_20"/>
+
+                        <Button
+                            android:id="@+id/ac_waijian_btn_jijiuxiang"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="5dp"
+                            android:background="@drawable/waijian_btn_bg"
+                            android:gravity="center"
+                            android:text="@string/ac_waijian_paizhao"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/ac_waijian_font_size_20"
+
+                            />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/gray_1"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ac_waijian_fangbaosi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/ac_waijian_paizhao_fangbaosi"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/ac_cardetails_font_size"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp">
+
+                        <TextView
+                            android:id="@+id/ac_waijian_txt_fangbaosi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="center"
+                            android:text="@string/ac_waijian_paizhao_weipaizhao"
+                            android:textColor="@color/red"
+                            android:textSize="@dimen/ac_waijian_font_size_22"/>
+
+                        <Button
+                            android:id="@+id/ac_waijian_btn_fangbaosi_preview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginRight="5dp"
+                            android:layout_toLeftOf="@+id/ac_waijian_btn_fangbaosi"
+                            android:background="@drawable/waijian_btn_bg"
+                            android:gravity="center"
+                            android:text="@string/activity_daijian_preview"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/ac_waijian_font_size_20"/>
+
+                        <Button
+                            android:id="@+id/ac_waijian_btn_fangbaosi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="5dp"
+                            android:background="@drawable/waijian_btn_bg"
+                            android:gravity="center"
+                            android:text="@string/ac_waijian_paizhao"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/ac_waijian_font_size_20"
+
+                            />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/gray_1"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ac_waijian_fuzhuzhidong"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/ac_waijian_paizhao_fuzhu_zhidong"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/ac_cardetails_font_size"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp">
+
+                        <TextView
+                            android:id="@+id/ac_waijian_txt_fuzhuzhidong"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="center"
+                            android:text="@string/ac_waijian_paizhao_weipaizhao"
+                            android:textColor="@color/red"
+                            android:textSize="@dimen/ac_waijian_font_size_22"/>
+
+                        <Button
+                            android:id="@+id/ac_waijian_btn_fuzhuzhidong_preview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginRight="5dp"
+                            android:layout_toLeftOf="@+id/ac_waijian_btn_fuzhuzhidong"
+                            android:background="@drawable/waijian_btn_bg"
+                            android:gravity="center"
+                            android:text="@string/activity_daijian_preview"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/ac_waijian_font_size_20"/>
+
+                        <Button
+                            android:id="@+id/ac_waijian_btn_fuzhuzhidong"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="5dp"
+                            android:background="@drawable/waijian_btn_bg"
+                            android:gravity="center"
+                            android:text="@string/ac_waijian_paizhao"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/ac_waijian_font_size_20"
+
+                            />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/gray_1"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ac_waijian_jinji_qieduan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/ac_waijian_paizhao_jinji_qieduan"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/ac_cardetails_font_size"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp">
+
+                        <TextView
+                            android:id="@+id/ac_waijian_txt_jinji_qieduan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="center"
+                            android:text="@string/ac_waijian_paizhao_weipaizhao"
+                            android:textColor="@color/red"
+                            android:textSize="@dimen/ac_waijian_font_size_22"/>
+
+                        <Button
+                            android:id="@+id/ac_waijian_btn_jinji_qieduan_preview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginRight="5dp"
+                            android:layout_toLeftOf="@+id/ac_waijian_btn_jinji_qieduan"
+                            android:background="@drawable/waijian_btn_bg"
+                            android:gravity="center"
+                            android:text="@string/activity_daijian_preview"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/ac_waijian_font_size_20"/>
+
+                        <Button
+                            android:id="@+id/ac_waijian_btn_jinji_qieduan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="5dp"
+                            android:background="@drawable/waijian_btn_bg"
+                            android:gravity="center"
+                            android:text="@string/ac_waijian_paizhao"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/ac_waijian_font_size_20"
+
+                            />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/gray_1"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ac_waijian_shoudong_jixie"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/ac_waijian_paizhao_shoudong_jixie_duandian"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/ac_cardetails_font_size"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp">
+
+                        <TextView
+                            android:id="@+id/ac_waijian_txt_shoudong_jixie"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="center"
+                            android:text="@string/ac_waijian_paizhao_weipaizhao"
+                            android:textColor="@color/red"
+                            android:textSize="@dimen/ac_waijian_font_size_22"/>
+
+                        <Button
+                            android:id="@+id/ac_waijian_btn_shoudong_jixie_preview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginRight="5dp"
+                            android:layout_toLeftOf="@+id/ac_waijian_btn_shoudong_jixie"
+                            android:background="@drawable/waijian_btn_bg"
+                            android:gravity="center"
+                            android:text="@string/activity_daijian_preview"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/ac_waijian_font_size_20"/>
+
+                        <Button
+                            android:id="@+id/ac_waijian_btn_shoudong_jixie"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="5dp"
+                            android:background="@drawable/waijian_btn_bg"
+                            android:gravity="center"
+                            android:text="@string/ac_waijian_paizhao"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/ac_waijian_font_size_20"
+
+                            />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/gray_1"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ac_waijian_fu_zhidong_taban"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/ac_waijian_paizhao_fuzhidong_taban"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/ac_cardetails_font_size"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp">
+
+                        <TextView
+                            android:id="@+id/ac_waijian_txt_fu_zhidong_taban"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="center"
+                            android:text="@string/ac_waijian_paizhao_weipaizhao"
+                            android:textColor="@color/red"
+                            android:textSize="@dimen/ac_waijian_font_size_22"/>
+
+                        <Button
+                            android:id="@+id/ac_waijian_btn_fu_zhidong_taban_preview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginRight="5dp"
+                            android:layout_toLeftOf="@+id/ac_waijian_btn_fu_zhidong_taban"
+                            android:background="@drawable/waijian_btn_bg"
+                            android:gravity="center"
+                            android:text="@string/activity_daijian_preview"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/ac_waijian_font_size_20"/>
+
+                        <Button
+                            android:id="@+id/ac_waijian_btn_fu_zhidong_taban"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="5dp"
+                            android:background="@drawable/waijian_btn_bg"
+                            android:gravity="center"
+                            android:text="@string/ac_waijian_paizhao"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/ac_waijian_font_size_20"
+
+                            />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/gray_1"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ac_waijian_weixian_huowu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/ac_waijian_paizhao_weixian_huowu_yunshuche"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/ac_cardetails_font_size"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp">
+
+                        <TextView
+                            android:id="@+id/ac_waijian_txt_weixian_huowu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="center"
+                            android:text="@string/ac_waijian_paizhao_weipaizhao"
+                            android:textColor="@color/red"
+                            android:textSize="@dimen/ac_waijian_font_size_22"/>
+
+                        <Button
+                            android:id="@+id/ac_waijian_btn_weixian_huowu_preview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginRight="5dp"
+                            android:layout_toLeftOf="@+id/ac_waijian_btn_weixian_huowu"
+                            android:background="@drawable/waijian_btn_bg"
+                            android:gravity="center"
+                            android:text="@string/activity_daijian_preview"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/ac_waijian_font_size_20"/>
+
+                        <Button
+                            android:id="@+id/ac_waijian_btn_weixian_huowu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="5dp"
+                            android:background="@drawable/waijian_btn_bg"
+                            android:gravity="center"
+                            android:text="@string/ac_waijian_paizhao"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/ac_waijian_font_size_20"
+
+                            />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/gray_1"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ac_waijian_chexiang_yeyabi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/ac_waijian_paizhao_chexiang_yeyabi"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/ac_cardetails_font_size"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp">
+
+                        <TextView
+                            android:id="@+id/ac_waijian_txt_chexiang_yeyabi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="center"
+                            android:text="@string/ac_waijian_paizhao_weipaizhao"
+                            android:textColor="@color/red"
+                            android:textSize="@dimen/ac_waijian_font_size_22"/>
+
+                        <Button
+                            android:id="@+id/ac_waijian_btn_chexiang_yeyabi_preview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginRight="5dp"
+                            android:layout_toLeftOf="@+id/ac_waijian_btn_chexiang_yeyabi"
+                            android:background="@drawable/waijian_btn_bg"
+                            android:gravity="center"
+                            android:text="@string/activity_daijian_preview"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/ac_waijian_font_size_20"/>
+
+                        <Button
+                            android:id="@+id/ac_waijian_btn_chexiang_yeyabi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="5dp"
+                            android:background="@drawable/waijian_btn_bg"
+                            android:gravity="center"
+                            android:text="@string/ac_waijian_paizhao"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/ac_waijian_font_size_20"
+
+                            />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/gray_1"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ac_waijian_luntai_guige"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_vertical"
+                            android:text="@string/ac_waijian_paizhao_luntai_guige_l_f"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/ac_cardetails_font_size"/>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp">
+
+                            <TextView
+                                android:id="@+id/ac_waijian_txt_luntai_guige_l_f"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="5dp"
+                                android:gravity="center"
+                                android:text="@string/ac_waijian_paizhao_weipaizhao"
+                                android:textColor="@color/red"
+                                android:textSize="@dimen/ac_waijian_font_size_22"/>
+
+                            <Button
+                                android:id="@+id/ac_waijian_btn_luntai_guige_l_f_preview"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginRight="5dp"
+                                android:layout_toLeftOf="@+id/ac_waijian_btn_luntai_guige_l_f"
+                                android:background="@drawable/waijian_btn_bg"
+                                android:gravity="center"
+                                android:text="@string/activity_daijian_preview"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/ac_waijian_font_size_20"/>
+
+                            <Button
+                                android:id="@+id/ac_waijian_btn_luntai_guige_l_f"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="5dp"
+                                android:background="@drawable/waijian_btn_bg"
+                                android:gravity="center"
+                                android:text="@string/ac_waijian_paizhao"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/ac_waijian_font_size_20"
+
+                                />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/gray_1"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_vertical"
+                            android:text="@string/ac_waijian_paizhao_luntai_guige_l_b"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/ac_cardetails_font_size"/>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp">
+
+                            <TextView
+                                android:id="@+id/ac_waijian_txt_luntai_guige_l_b"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="5dp"
+                                android:gravity="center"
+                                android:text="@string/ac_waijian_paizhao_weipaizhao"
+                                android:textColor="@color/red"
+                                android:textSize="@dimen/ac_waijian_font_size_22"/>
+
+                            <Button
+                                android:id="@+id/ac_waijian_btn_luntai_guige_l_b_preview"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginRight="5dp"
+                                android:layout_toLeftOf="@+id/ac_waijian_btn_luntai_guige_l_b"
+                                android:background="@drawable/waijian_btn_bg"
+                                android:gravity="center"
+                                android:text="@string/activity_daijian_preview"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/ac_waijian_font_size_20"/>
+
+                            <Button
+                                android:id="@+id/ac_waijian_btn_luntai_guige_l_b"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="5dp"
+                                android:background="@drawable/waijian_btn_bg"
+                                android:gravity="center"
+                                android:text="@string/ac_waijian_paizhao"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/ac_waijian_font_size_20"
+
+                                />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/gray_1"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_vertical"
+                            android:text="@string/ac_waijian_paizhao_luntai_guige_r_f"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/ac_cardetails_font_size"/>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp">
+
+                            <TextView
+                                android:id="@+id/ac_waijian_txt_luntai_guige_r_f"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="5dp"
+                                android:gravity="center"
+                                android:text="@string/ac_waijian_paizhao_weipaizhao"
+                                android:textColor="@color/red"
+                                android:textSize="@dimen/ac_waijian_font_size_22"/>
+
+                            <Button
+                                android:id="@+id/ac_waijian_btn_luntai_guige_r_f_preview"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginRight="5dp"
+                                android:layout_toLeftOf="@+id/ac_waijian_btn_luntai_guige_r_f"
+                                android:background="@drawable/waijian_btn_bg"
+                                android:gravity="center"
+                                android:text="@string/activity_daijian_preview"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/ac_waijian_font_size_20"/>
+
+                            <Button
+                                android:id="@+id/ac_waijian_btn_luntai_guige_r_f"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="5dp"
+                                android:background="@drawable/waijian_btn_bg"
+                                android:gravity="center"
+                                android:text="@string/ac_waijian_paizhao"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/ac_waijian_font_size_20"
+
+                                />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/gray_1"/>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center_vertical"
+                            android:text="@string/ac_waijian_paizhao_luntai_guige_r_b"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/ac_cardetails_font_size"/>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp">
+
+                            <TextView
+                                android:id="@+id/ac_waijian_txt_luntai_guige_r_b"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="5dp"
+                                android:gravity="center"
+                                android:text="@string/ac_waijian_paizhao_weipaizhao"
+                                android:textColor="@color/red"
+                                android:textSize="@dimen/ac_waijian_font_size_22"/>
+
+                            <Button
+                                android:id="@+id/ac_waijian_btn_luntai_guige_r_b_preview"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginRight="5dp"
+                                android:layout_toLeftOf="@+id/ac_waijian_btn_luntai_guige_r_b"
+                                android:background="@drawable/waijian_btn_bg"
+                                android:gravity="center"
+                                android:text="@string/activity_daijian_preview"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/ac_waijian_font_size_20"/>
+
+                            <Button
+                                android:id="@+id/ac_waijian_btn_luntai_guige_r_b"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="5dp"
+                                android:background="@drawable/waijian_btn_bg"
+                                android:gravity="center"
+                                android:text="@string/ac_waijian_paizhao"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/ac_waijian_font_size_20"
+
+                                />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/gray_1"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/ac_waijian_btn_buhege"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/waijian_wancheng_bg"
+                    android:gravity="center"
+                    android:text="@string/btn_buhege"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/ac_waijian_font_size_20"></Button>
+
+
+                <Button
+                    android:id="@+id/ac_waijian_btn_wancheng"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/waijian_wancheng_bg"
+                    android:gravity="center"
+                    android:text="@string/btn_wanchen"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/ac_waijian_font_size_20"></Button>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:id="@+id/ac_waijian_photo_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <cn.iwgang.countuptime.CountupView
+                android:id="@+id/ac_waijian_tv_jishiqi_cv_CountupViewTest3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                app:isShowDay="false"
+                app:isShowHour="true"
+                app:isShowMillisecond="false"
+                app:isShowMinute="true"
+                app:isShowSecond="true"
+                app:suffixGravity="center"
+                app:suffixTextColor="#000000"
+                app:suffixTextSize="21sp"
+                app:timeTextColor="#E23435"
+                app:timeTextSize="20sp"/>
+
+            <TextView
+                android:id="@+id/ac_waijian_tv_jishiqi_time_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="项目进行时间：0  秒"
+                android:textColor="@color/red"
+                android:textSize="20sp"
+                android:visibility="gone"
+
+                />
+
+            <!-- <RelativeLayout
+                 android:layout_width="match_parent"
+
+                 android:layout_height="match_parent">-->
+
+            <ListView
+                android:id="@+id/ac_waijian_photo_listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/ac_waijian_photo_ll_bottom_layout"
+                >
+            </ListView>
+
+            <LinearLayout
+                android:id="@+id/ac_waijian_photo_ll_bottom_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/blue"/>
+
+                <Button
+                    android:id="@+id/ac_waijian_btn_buhege2"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/waijian_wancheng_bg"
+                    android:gravity="center"
+                    android:text="@string/btn_buhege"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/ac_waijian_font_size_20"></Button>
+
+
+                <Button
+                    android:id="@+id/ac_waijian_btn_wancheng2"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/waijian_wancheng_bg"
+                    android:gravity="center"
+                    android:text="@string/btn_wanchen"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/ac_waijian_font_size_20"></Button>
+            </LinearLayout>
+            <!-- </RelativeLayout>-->
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

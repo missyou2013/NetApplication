@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/set_bg"
+              android:orientation="vertical">
+
+    <include layout="@layout/top_title"></include>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp">
+
+                <Button
+                    android:id="@+id/ac_home_btn_obd"
+                    android:layout_width="@dimen/home_btn_w"
+                    android:layout_height="@dimen/home_btn_h"
+                    android:layout_alignParentTop="true"
+                    android:layout_toLeftOf="@+id/ac_home_view_m"
+                    android:layout_toStartOf="@+id/ac_home_view_m"
+                    android:background="@drawable/my_shape_blue_light"
+                    android:gravity="center"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:text="OBD"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/ac_home_view_m"
+                    android:layout_width="60dp"
+                    android:layout_height="1dp"
+                    android:layout_centerInParent="true"></TextView>
+
+
+                <Button
+                    android:id="@+id/ac_home_btn_vin"
+                    android:layout_width="@dimen/home_btn_w"
+                    android:layout_height="@dimen/home_btn_h"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/ac_home_view_m"
+                    android:background="@drawable/my_shape_blue_light"
+                    android:gravity="center"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:text="VIN"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp">
+
+                <Button
+                    android:id="@+id/ac_home_btn_zhiwen"
+                    android:layout_width="@dimen/home_btn_w"
+                    android:layout_height="@dimen/home_btn_h"
+                    android:layout_alignParentTop="true"
+                    android:layout_toLeftOf="@+id/ac_home_view_m2"
+                    android:layout_toStartOf="@+id/ac_home_view_m2"
+                    android:background="@drawable/my_shape_blue_light"
+                    android:gravity="center"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:text="指纹识别"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/ac_home_view_m2"
+                    android:layout_width="60dp"
+                    android:layout_height="1dp"
+                    android:layout_centerInParent="true"></TextView>
+
+
+                <Button
+                    android:id="@+id/ac_home_btn_check"
+                    android:layout_width="@dimen/home_btn_w"
+                    android:layout_height="@dimen/home_btn_h"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/ac_home_view_m2"
+                    android:background="@drawable/my_shape_blue_light"
+                    android:gravity="center"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:text="汽车检测"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

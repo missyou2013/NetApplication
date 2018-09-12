@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/set_bg"
+    android:orientation="vertical"
+    >
+    <!--复检拍照-->
+    <include layout="@layout/top_title"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+       android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_weight="0.7"
+            android:maxLines="1"
+            android:gravity="center"
+            android:text="开始时间："
+            android:textColor="@color/black"
+            android:textSize="@dimen/ac_recheck_font_size"/>
+
+        <TextView
+            android:id="@+id/ac_recheck_start_time"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"   android:maxLines="1"
+            android:layout_weight="1"
+            android:gravity="center_vertical|left"
+            android:text="2017-12-22"
+            android:textColor="@color/red"
+            android:textSize="@dimen/ac_recheck_font_size"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_weight="0.7"
+            android:maxLines="1"
+            android:gravity="center"
+            android:text="结束时间："
+            android:textColor="@color/black"
+            android:textSize="@dimen/ac_recheck_font_size"/>
+
+        <TextView
+            android:id="@+id/ac_recheck_end_time"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"   android:maxLines="1"
+            android:gravity="center_vertical|left"
+            android:text="2017-12-22"
+            android:textColor="@color/red"
+            android:textSize="@dimen/ac_recheck_font_size"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:id="@+id/ac_daijian_et_search22"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="4"
+            android:background="@mipmap/et_bg_2"
+            android:hint="@string/hint_chepaihao"
+            android:paddingLeft="5dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/set_fot_16"/>
+
+        <Button
+            android:id="@+id/ac_daijian_btn_search22"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@+id/ac_set_view_m"
+            android:layout_weight="1"
+            android:background="@drawable/my_shape"
+            android:gravity="center"
+            android:text="@string/activity_daijian_search"
+            android:textColor="@color/blue_light"
+            android:textSize="@dimen/set_fot_15"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@mipmap/line_right_75"/>
+
+        <Button
+            android:id="@+id/ac_daijian_bt_type22"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@+id/ac_set_view_m"
+            android:layout_weight="1"
+            android:background="@drawable/my_shape"
+            android:gravity="center"
+            android:text="复检"
+            android:textColor="@color/blue_light"
+            android:textSize="@dimen/set_fot_15"
+            android:textStyle="bold"
+            android:visibility="gone"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="10dp"
+
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.1"
+            android:maxLines="1"
+            android:paddingLeft="10dp"
+            android:text="@string/activity_daijian_haoma"
+            android:textColor="@color/blue_light"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:maxLines="1"
+            android:paddingLeft="0dp"
+            android:text="次数"
+            android:gravity="center"
+            android:textColor="@color/blue_light"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="流水号"
+            android:textColor="@color/blue_light"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/ac_rechreck_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></ListView>
+
+
+    </FrameLayout>
+
+
+</LinearLayout>

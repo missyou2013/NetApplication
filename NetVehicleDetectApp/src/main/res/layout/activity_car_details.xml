@@ -1,0 +1,742 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/set_bg"
+    android:orientation="vertical">
+
+    <!--待检测车辆详情-->
+    <include layout="@layout/top_title"></include>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="0dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ac_car_details_height"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="0.5"
+                        android:gravity="center_vertical"
+                        android:text="@string/ac_cardetails_chepaihaoma"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/ac_cardetails_font_size" />
+
+                    <TextView
+                        android:id="@+id/ac_car_details_chepai_haoma"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|left"
+                        android:text=""
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/ac_cardetails_font_size" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ac_car_details_height"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="0.5"
+                        android:gravity="center_vertical"
+                        android:text="@string/ac_cardetails_haopailiexing"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/ac_cardetails_font_size" />
+
+                    <TextView
+                        android:id="@+id/ac_car_details_haopaileixing"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|left"
+                        android:maxLines="1"
+                        android:text=""
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/ac_cardetails_font_size" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ac_car_details_height"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="0.5"
+                        android:gravity="center_vertical"
+                        android:text="@string/ac_cardetails_cheliangleixing"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/ac_cardetails_font_size" />
+
+                    <TextView
+                        android:id="@+id/ac_car_details_cheliangleixing"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|left"
+                        android:maxLines="1"
+                        android:text=""
+                        android:textColor="@color/red"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ac_car_details_height"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="0.5"
+                        android:gravity="center_vertical"
+                        android:text="@string/ac_cardetails_vin"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/ac_cardetails_font_size" />
+
+                    <TextView
+                        android:id="@+id/ac_car_details_vin"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|left"
+                        android:maxLines="1"
+                        android:text=""
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/ac_cardetails_font_size" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_1" />
+
+                <LinearLayout
+                    android:id="@+id/lay_line_ac_car_details_waijianchedao"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ac_car_details_height"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="0.5"
+                        android:gravity="center_vertical"
+                        android:text="@string/ac_cardetails_waijianchedao"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/ac_cardetails_font_size" />
+
+                    <TextView
+                        android:id="@+id/ac_car_details_waijianchedao"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="1"
+                        android:drawableRight="@mipmap/np_numberpicker_down_normal_holo_dark"
+                        android:gravity="center_vertical|center"
+                        android:maxLines="1"
+                        android:text="1"
+                        android:textColor="@color/red"
+                        android:textSize="23dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_1"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ac_car_details_height"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="0.5"
+                        android:gravity="center_vertical"
+                        android:text="@string/ac_cardetails_chejianxianhao"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/ac_cardetails_font_size" />
+
+                    <TextView
+                        android:id="@+id/ac_car_details_chejianxianhao"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="1"
+                        android:drawableRight="@mipmap/np_numberpicker_down_normal_holo_dark"
+                        android:gravity="center_vertical|center"
+                        android:maxLines="1"
+                        android:text="1"
+                        android:textColor="@color/red"
+                        android:textSize="23dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ac_car_details_height"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="0.5"
+                        android:gravity="center_vertical"
+                        android:text="@string/ac_cardetails_shifouwaijian"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/ac_cardetails_font_size" />
+
+                    <TextView
+                        android:id="@+id/ac_car_details_shifouwaijian"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|left"
+                        android:maxLines="1"
+                        android:text="@string/shi"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/ac_cardetails_font_size" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ac_car_details_height"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="0.5"
+                        android:gravity="center_vertical"
+                        android:text="@string/ac_cardetails_zongzhiliang"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/ac_cardetails_font_size" />
+
+                    <TextView
+                        android:id="@+id/ac_car_details_zongzhiliang"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|left"
+                        android:maxLines="1"
+                        android:text=""
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/ac_cardetails_font_size" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="0.5"
+                        android:gravity="center_vertical"
+                        android:text="@string/ac_cardetails_zhengbeizhiliang"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/ac_cardetails_font_size" />
+
+                    <TextView
+                        android:id="@+id/ac_car_details_zhengbeizhiliang"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:gravity="left|bottom"
+                        android:numeric="integer"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/ac_cardetails_font_size" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ac_car_details_height"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="0.5"
+                        android:gravity="center_vertical"
+                        android:text="@string/ac_cardetails_chewaikuochang"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/ac_cardetails_font_size" />
+
+                    <TextView
+                        android:id="@+id/ac_car_details_chewaikuochang"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|left"
+                        android:text=""
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/ac_cardetails_font_size" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ac_car_details_height"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="0.5"
+                        android:gravity="center_vertical"
+                        android:text="@string/ac_cardetails_chewaikuokuan"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/ac_cardetails_font_size" />
+
+                    <TextView
+                        android:id="@+id/ac_car_details_chewaikuokuan"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|left"
+                        android:text=""
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/ac_cardetails_font_size" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ac_car_details_height"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="0.5"
+                        android:gravity="center_vertical"
+                        android:text="@string/ac_cardetails_chewaikuogao"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/ac_cardetails_font_size" />
+
+                    <TextView
+                        android:id="@+id/ac_car_details_chewaikuogao"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|left"
+                        android:text=""
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/ac_cardetails_font_size" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ac_car_details_height"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="0.5"
+                        android:gravity="center_vertical"
+                        android:text="@string/ac_cardetails_jianyanliushui"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/ac_cardetails_font_size" />
+
+                    <TextView
+                        android:id="@+id/ac_car_details_jianyanliushui"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|left"
+                        android:text=""
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/ac_cardetails_font_size" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ac_car_details_height"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="0.5"
+                        android:gravity="center_vertical"
+                        android:text="@string/ac_cardetails_jianyancishu"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/ac_cardetails_font_size" />
+
+                    <TextView
+                        android:id="@+id/ac_car_details_jianyancishu"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|left"
+                        android:text="1"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/ac_cardetails_font_size" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ac_car_details_height"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="0.5"
+                        android:gravity="center_vertical"
+                        android:text="@string/ac_cardetails_shiyongxingzhi"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/ac_cardetails_font_size" />
+
+                    <TextView
+                        android:id="@+id/ac_car_details_shiyongxingzhi"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|left"
+                        android:text=""
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/ac_cardetails_font_size" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ac_car_details_height"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="0.5"
+                        android:gravity="center_vertical"
+                        android:text="@string/ac_cardetails_cheshenyanse"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/ac_cardetails_font_size" />
+
+                    <TextView
+                        android:id="@+id/ac_car_details_cheshenyanse"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|left"
+                        android:text=""
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/ac_cardetails_font_size" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ac_car_details_height"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="0.5"
+                        android:gravity="center_vertical"
+                        android:text="@string/ac_cardetails_huoxiangchangdu"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/ac_cardetails_font_size" />
+
+                    <TextView
+                        android:id="@+id/ac_car_details_huoxiangchangdu"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|left"
+                        android:text="12800"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/ac_cardetails_font_size" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_1"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ac_car_details_height"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="0.5"
+                        android:gravity="center_vertical"
+                        android:text="@string/ac_cardetails_huoxiangkuandu"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/ac_cardetails_font_size" />
+
+                    <TextView
+                        android:id="@+id/ac_car_details_huoxiangkuandu"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|left"
+                        android:text="2300"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/ac_cardetails_font_size" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_1"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ac_car_details_height"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="0.5"
+                        android:gravity="center_vertical"
+                        android:text="@string/ac_cardetails_huoxianggaodu"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/ac_cardetails_font_size" />
+
+                    <TextView
+                        android:id="@+id/ac_car_details_huoxianggaodu"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|left"
+                        android:text="600"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/ac_cardetails_font_size" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_1"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ac_car_details_height"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="0.5"
+                        android:gravity="center_vertical"
+                        android:text="@string/ac_cardetails_zhuangtai"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/ac_cardetails_font_size" />
+
+                    <TextView
+                        android:id="@+id/ac_car_details_zhuangtai"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|left"
+                        android:text="Q"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/ac_cardetails_font_size" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_1"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="50dp"
+                    android:layout_marginTop="30dp">
+
+                    <Button
+                        android:id="@+id/ac_car_details_cancle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_toLeftOf="@+id/ac_set_view_mm"
+                        android:layout_toStartOf="@+id/ac_set_view_mm"
+                        android:background="@drawable/my_shape"
+                        android:gravity="center"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:text="查询公告"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/ac_set_view_mm"
+                        android:layout_width="60dp"
+                        android:layout_height="1dp"
+                        android:layout_centerInParent="true"></TextView>
+
+
+                    <Button
+                        android:id="@+id/ac_car_details_start"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/ac_set_view_mm"
+                        android:background="@drawable/my_shape"
+                        android:gravity="center"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:text="@string/btn_start"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/top_title"></include>
+
+
+</LinearLayout>

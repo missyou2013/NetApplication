@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/set_bg"
+    android:orientation="vertical">
+    <!--OBD-->
+    <include layout="@layout/top_title"></include>
+
+    <EditText
+        android:id="@+id/ac_obd_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="55555566666Name" />
+
+    <TextView
+        android:id="@+id/ac_obd_bluetooth_state"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="" />
+    <TextView
+        android:id="@+id/ac_obd_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/ac_obd_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button" />
+    <Button
+        android:id="@+id/ac_obd_btn2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button2" />
+
+    <ListView
+        android:id="@+id/ac_obd_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

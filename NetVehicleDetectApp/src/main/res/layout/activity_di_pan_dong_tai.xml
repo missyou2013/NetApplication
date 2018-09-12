@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/set_bg"
+    android:orientation="vertical">
+
+    <!--底盘动态检验-->
+    <include layout="@layout/top_title"></include>
+
+    <ScrollView
+        android:id="@+id/ac_dipan_dongtai_jiance_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ac_car_details_height"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="0.5"
+                        android:gravity="center_vertical"
+                        android:text="@string/ac_dipan_dongtai_jiance_time"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/ac_cardetails_font_size"/>
+
+                    <TextView
+                        android:id="@+id/ac_dipan_dongtai_jiance_time"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|left"
+                        android:text=""
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/ac_cardetails_font_size"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_1"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ac_car_details_height"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="0.5"
+                        android:gravity="center_vertical"
+                        android:text="@string/ac_cardetails_chepaihaoma"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/ac_cardetails_font_size"/>
+
+                    <TextView
+                        android:id="@+id/ac_dipan_dongtai_jiance_chepaihaoma"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|left"
+                        android:text=" "
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/ac_cardetails_font_size"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_1"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ac_car_details_height"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="0.5"
+                        android:gravity="center_vertical"
+                        android:text="@string/ac_cardetails_haopailiexing"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/ac_cardetails_font_size"/>
+
+                    <TextView
+                        android:id="@+id/ac_dipan_dongtai_jiance_haopailiexing"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|left"
+                        android:text=" "
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/ac_cardetails_font_size"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_1"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ac_car_details_height"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="0.5"
+                        android:gravity="center_vertical"
+                        android:text="@string/ac_dipan_dongtai_chedaohao"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/ac_cardetails_font_size"/>
+
+                    <TextView
+                        android:id="@+id/ac_dipan_dongtai_chedaohao"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="1"
+                        android:drawableRight="@mipmap/np_numberpicker_down_normal_holo_dark"
+                        android:gravity="center_vertical|center"
+                        android:maxLines="1"
+                        android:text="1"
+                        android:textColor="@color/red"
+                        android:textSize="23dp"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_1"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ac_car_details_height"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="0.5"
+                        android:gravity="center_vertical"
+                        android:text="@string/ac_cardetails_vin"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/ac_cardetails_font_size"/>
+
+                    <TextView
+                        android:id="@+id/ac_dipan_dongtai_vin"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|left"
+                        android:maxLines="1"
+                        android:text=" "
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/ac_cardetails_font_size"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_1"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ac_car_details_height"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="0.5"
+                        android:gravity="center_vertical"
+                        android:text="@string/ac_cardetails_jianyanliushui"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/ac_cardetails_font_size"/>
+
+                    <TextView
+                        android:id="@+id/ac_dipan_dongtai_jianyanliushui"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|left"
+                        android:text=" "
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/ac_cardetails_font_size"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_1"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ac_car_details_height"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="0.5"
+                        android:gravity="center_vertical"
+                        android:text="@string/ac_cardetails_jianyancishu"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/ac_cardetails_font_size"/>
+
+                    <TextView
+                        android:id="@+id/ac_dipan_dongtai_jianyancishu"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|left"
+                        android:text=" "
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/ac_cardetails_font_size"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_1"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="0.5"
+                        android:gravity="center_vertical"
+                        android:text="@string/ac_dipan_dongtai_beizhu"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/ac_cardetails_font_size"/>
+
+                    <EditText
+                        android:id="@+id/ac_dipan_dongtai_beizhu"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="1"
+                        android:gravity="left|bottom"
+                        android:text=" "
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/ac_cardetails_font_size"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_1"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="0.5"
+                        android:gravity="center_vertical"
+                        android:text="@string/ac_dipan_dongtai_shangci_daima"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/ac_cardetails_font_size"/>
+
+                    <EditText
+                        android:id="@+id/ac_dipan_dongtai_shangci_daima"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="1"
+                        android:gravity="left|bottom"
+                        android:text=" "
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/ac_cardetails_font_size"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_1"/>
+
+
+             <!--   <cn.iwgang.countdownview.CountdownView
+                    android:id="@+id/cv_countdownViewTest1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    app:isHideTimeBackground="true"
+                    android:layout_marginTop="10dp"
+                    app:isShowMillisecond="true"
+                    app:isShowMinute="true"
+                    app:isShowSecond="true"
+                    app:isTimeTextBold="true"
+                    app:suffixGravity="bottom"
+                    app:suffixHour="时"
+                    app:suffixMillisecond="毫秒"
+                    app:suffixMinute="分"
+                    app:suffixSecond="秒"
+                    app:suffixTextColor="#000000"
+                    app:suffixTextSize="12sp"
+                    app:timeTextColor="#000000"
+                    app:timeTextSize="22sp"/>-->
+
+
+                <cn.iwgang.countuptime.CountupView
+                    android:id="@+id/ac_dipan_dongtai_jishiqi_cv_CountupViewTest3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    app:isShowDay="false"
+                    app:isShowHour="true"
+                    app:isShowMillisecond="false"
+                    app:isShowMinute="true"
+                    app:isShowSecond="true"
+                    app:suffixGravity="center"
+                    app:suffixTextColor="#000000"
+                    app:suffixTextSize="21sp"
+                    android:layout_centerInParent="true"
+                    app:timeTextColor="#E23435"
+                    app:timeTextSize="20sp"/>
+                <TextView
+                    android:id="@+id/ac_dipan_dongtai_tv_jishiqi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                   android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:text="项目进行时间：0  秒"
+                    android:textColor="@color/red"
+                    android:textSize="20sp"
+
+                    />
+
+
+
+                <Button
+                    android:id="@+id/ac_dipandongtai_btn_buhege_submit"
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/waijian_wancheng_bg"
+                    android:gravity="center"
+                    android:text="@string/btn_buhege"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/ac_waijian_font_size_20"></Button>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp">
+
+                    <Button
+                        android:id="@+id/ac_dipan_dongtai_start"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_toLeftOf="@+id/ac_set_view_mm34"
+                        android:layout_toStartOf="@+id/ac_set_view_mm34"
+                        android:background="@drawable/my_shape"
+                        android:gravity="center"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:text="@string/ac_dipan_dongtai_xiangmu_kaishi"
+                        android:textSize="18sp"/>
+
+
+                    <TextView
+                        android:id="@+id/ac_set_view_mm34"
+                        android:layout_width="60dp"
+                        android:layout_height="1dp"
+                        android:layout_centerInParent="true"></TextView>
+
+
+                    <Button
+                        android:id="@+id/ac_dipan_dongtai_wanchen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/ac_set_view_mm34"
+                        android:background="@drawable/my_shape"
+                        android:gravity="center"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:text="项目结束"
+                        android:textSize="18sp"/>
+                </RelativeLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/ac_dipan_dongtai_tv_paizhao_0_statement"
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_marginRight="0dp"
+                        android:text="上传项目开始照片"
+                        android:textColor="@color/red"
+                        android:textSize="16sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/ac_dipan_dongtai_tv_paizhao_1_statement"
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="上传项目结束照片"
+                        android:textColor="@color/red"
+                        android:textSize="16sp"
+                        />
+                </LinearLayout>
+                <com.mvd.app.widget.ListViewForScrollView
+                    android:id="@+id/ac_dipan_dongtai_start_listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:cacheColorHint="#00000000"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:listSelector="#00000000"
+                    android:scrollbars="none">
+                </com.mvd.app.widget.ListViewForScrollView>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

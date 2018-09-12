@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/set_bg"
+
+
+                android:orientation="vertical">
+
+    <!--新车车辆列表-->
+    <include
+        android:id="@+id/ac_new_cars_layout_top"
+        layout="@layout/top_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ac_new_cars_layout_top"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="5dp"
+            android:focusable="true" android:focusableInTouchMode="true"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/ac_new_cars_et_search2"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="2.5"
+                android:background="@mipmap/et_bg_2"
+                android:hint="@string/hint_chepaihao"
+                android:maxLines="1"
+                android:paddingLeft="5dp"
+                android:textColor="@color/black"
+                android:focusableInTouchMode="true"
+                android:textSize="@dimen/set_fot_16"/>
+
+            <Button
+                android:id="@+id/ac_new_cars_btn_search2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="5dp"
+                android:layout_toRightOf="@+id/ac_set_view_m"
+                android:layout_weight="1"
+                android:background="@drawable/my_shape"
+                android:gravity="center"
+                android:text="@string/activity_daijian_search"
+                android:textColor="@color/blue_light"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@mipmap/line_right_75"
+                android:visibility="invisible"/>
+
+            <Button
+                android:id="@+id/ac_new_cars_bt_type2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="5dp"
+                android:layout_toRightOf="@+id/ac_set_view_m"
+                android:layout_weight="1.4"
+                android:background="@drawable/my_shape"
+                android:gravity="center"
+                android:text="复检拍照"
+                android:textColor="@color/blue_light"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ac_new_cars_ll_middle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:maxLines="1"
+                android:paddingLeft="15dp"
+                android:text="@string/activity_daijian_haoma"
+
+                android:textColor="@color/blue_light"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:gravity="center"
+                android:maxLines="1"
+                android:paddingLeft="0dp"
+                android:text="@string/activity_daijian_leixing"
+                android:textColor="@color/blue_light"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:maxLines="1"
+                android:paddingRight="10dp"
+                android:text="状态"
+                android:textColor="@color/blue_light"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <ListView
+                android:id="@+id/ac_list_new_cars"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="80dp"
+                ></ListView>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@color/ac_Backgroud"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp">
+
+                <Button
+                    android:id="@+id/ac_new_cars_fab"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="0dp"
+                    android:layout_toRightOf="@+id/ac_new_cars_m_view"
+                    android:background="@mipmap/ic_bule"
+                    android:gravity="center"
+                    android:text="刷新"
+                    android:textColor="@color/white"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    />
+
+                <Button
+                    android:id="@+id/ac_new_cars_btn_shangxian"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_toLeftOf="@+id/ac_new_cars_m_view"
+                    android:background="@mipmap/ic_bule"
+                    android:gravity="center"
+                    android:text="上线"
+                    android:textColor="@color/white"
+                    android:textSize="22sp"
+                    android:textStyle="bold"/>
+
+                <View
+                    android:id="@+id/ac_new_cars_m_view"
+                    android:layout_width="1dp"
+                    android:layout_height="1dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!--  <Button
+          android:id="@+id/ac_new_cars_btn_shangxian"
+          android:layout_width="match_parent"
+          android:layout_height="50dp"
+          android:layout_alignParentBottom="true"
+          android:layout_centerVertical="true"
+          android:layout_marginBottom="3dp"
+          android:layout_marginTop="10dp"
+          android:background="@drawable/my_shape"
+          android:gravity="center"
+          android:text="上线"
+          android:textColor="@color/blue_light"
+          android:textSize="22sp"
+          android:textStyle="bold"/>-->
+</RelativeLayout>
