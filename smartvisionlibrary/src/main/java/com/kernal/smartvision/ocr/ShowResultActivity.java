@@ -248,6 +248,7 @@ public class ShowResultActivity extends Activity {
 		}
 		layoutParams01.leftMargin = (int) (srcWidth * 0.15);
 		btn_feed.setLayoutParams(layoutParams01);
+		btn_feed.setVisibility(View.GONE);
 		if(MainActivity.moudle){
 			saveHttpPic(httpPath);
 		}

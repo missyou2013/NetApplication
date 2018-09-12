@@ -83,6 +83,7 @@ public class MainActivity extends Activity {
         CameraSetting.getInstance(this).hiddenVirtualButtons(getWindow().getDecorView());
 
         btn_set = (ImageButton) this.findViewById(getResources().getIdentifier("btn_set", "id", getPackageName()));
+
         btn_app_logo = (ImageButton) this.findViewById(getResources().getIdentifier("btn_app_logo", "id", getPackageName()));
         btn_scanRecog = (ImageButton) this.findViewById(getResources().getIdentifier("btn_scanRecog", "id", getPackageName()));
         btn_import = (ImageButton) this.findViewById(getResources().getIdentifier("btn_import", "id", getPackageName()));
@@ -166,7 +167,7 @@ public class MainActivity extends Activity {
         });
         RelativeLayout.LayoutParams params = new RelativeLayout.LayoutParams((int) (width * 0.2), (int) (width * 0.2));
         params.addRule(RelativeLayout.CENTER_HORIZONTAL);
-        params.topMargin = (int) (0.7 * height);
+        params.topMargin = (int) (0.4 * height);
         btn_scanRecog.setLayoutParams(params);
         params = new RelativeLayout.LayoutParams((int) (width * 0.15), (int) (width * 0.15));
         params.leftMargin = (int) (width * 0.7);

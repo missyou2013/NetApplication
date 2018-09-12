@@ -34,11 +34,13 @@
         android:layout_height="fill_parent"
         android:background="#000000"
         android:listSelector="#000000"
+        android:visibility="gone"
         android:scrollbars="none"
         />
     <com.kernal.smartvision.view.HorizontalListView 
         android:id="@+id/type_template_HorizontallistView"
         android:layout_width="fill_parent"
+
         android:layout_height="fill_parent"
 
         />

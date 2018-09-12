@@ -108,7 +108,8 @@ public class LoginActivity extends BaseActivity {
         net.com.mvp.ac.commons.FileUtils.deleteDirectory(Environment.getExternalStorageDirectory() +
                 "/Pictures");
 
-        textView.setText("移动检测系统" + CommonUtils.getVersionName(instances));
+//        textView.setText("PDA查验系统" + CommonUtils.getVersionName(instances));
+        textView.setText("PDA查验系统");
         UtilsLog.e("当前选择的版本号：" + CommonUtils.getVersionName(instances));
         pop_account();
         pop_account_userlist();

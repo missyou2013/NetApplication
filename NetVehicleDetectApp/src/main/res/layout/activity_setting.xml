@@ -492,6 +492,14 @@
                         android:text="签字图片采集"
                         android:textSize="18sp" />
                 </LinearLayout>
+                <Button
+                    android:id="@+id/ac_set_btn_vin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/my_shape"
+                    android:gravity="center"
+                    android:text="VIN"
+                    android:textSize="18sp" />
             </LinearLayout>
         </LinearLayout>
     </ScrollView>

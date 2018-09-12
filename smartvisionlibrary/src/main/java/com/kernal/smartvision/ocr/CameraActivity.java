@@ -536,7 +536,7 @@ public class CameraActivity extends Activity implements SurfaceHolder.Callback,
                     (int) (0.085 * srcHeight));
             layoutParams.topMargin = (int) (srcHeight * 0.95);
             type_template_HorizontallistView.setLayoutParams(layoutParams);
-            type_template_HorizontallistView.setVisibility(View.VISIBLE);
+            type_template_HorizontallistView.setVisibility(View.GONE);
 
             // 闪光灯按钮UI竖屏布局
             layoutParams = new RelativeLayout.LayoutParams(
@@ -578,7 +578,7 @@ public class CameraActivity extends Activity implements SurfaceHolder.Callback,
 
             layoutParams.leftMargin = (srcWidth - surfaceViewWidth) / 2;
             type_template_HorizontallistView.setLayoutParams(layoutParams);
-            type_template_HorizontallistView.setVisibility(View.VISIBLE);
+            type_template_HorizontallistView.setVisibility(View.GONE);
 
             // 闪光灯按钮UI布局
             layoutParams = new RelativeLayout.LayoutParams(

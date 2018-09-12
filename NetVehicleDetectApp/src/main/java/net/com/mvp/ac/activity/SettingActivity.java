@@ -109,6 +109,8 @@ public class SettingActivity extends BaseActivity implements AdapterView.OnItemC
     Button acSetBtnFinger;
     @BindView(R.id.ac_set_btn_qianzi)
     Button acSetBtnQianzi;
+    @BindView(R.id.ac_set_btn_vin)
+    Button acSetBtnVin;
 
     //popuwindow
     private View popu_view;
@@ -179,9 +181,15 @@ public class SettingActivity extends BaseActivity implements AdapterView.OnItemC
             R.id.ac_setting_txt_bianma, R.id.ac_setting_txt_shijian,
             R.id.ac_setting_txt_chepai_left, R.id.ac_setting_txt_chepai_right,
             R.id.ac_set_btn_cancle, R.id.ac_set_btn_save, R.id.ac_set_btn_finger,
-            R.id.ac_setting_txt_paizhao, R.id.ac_set_btn_obd, R.id.ac_set_btn_qianzi})
+            R.id.ac_setting_txt_paizhao, R.id.ac_set_btn_obd, R.id.ac_set_btn_qianzi
+    ,R.id.ac_set_btn_vin})
     public void onViewClicked(View view) {
         switch (view.getId()) {
+            case R.id.ac_set_btn_vin:
+                //VIN
+                Intent intent = new Intent(this, com.kernal.smartvision.ocr.MainActivity.class);
+                startActivity(intent);
+                break;
             case R.id.ac_set_btn_qianzi:
                 //签字图片采集
                 Intent i22a = new Intent(this, FingerActivity.class);
@@ -196,10 +204,7 @@ public class SettingActivity extends BaseActivity implements AdapterView.OnItemC
                 //OBD测试
                 Intent intent_obd = new Intent(this, MainActivity.class);
                 startActivity(intent_obd);
-
-
 //                getBondBluetooth();
-
                 break;
             case R.id.ac_setting_txt_shujuku:
                 view_type = 0;

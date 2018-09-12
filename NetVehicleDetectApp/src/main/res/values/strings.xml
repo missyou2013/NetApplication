@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">移动检测系统</string>
+    <string name="app_name">PDA查验系统</string>
 
     <string name="l_zhanghao">账号</string>
     <string name="l_miam">密码</string>
