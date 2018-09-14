@@ -34,6 +34,7 @@ public class WelcomeActivity extends BaseActivity {
             android.Manifest.permission.CAMERA,
             android.Manifest.permission.READ_CALENDAR,
             android.Manifest.permission.BODY_SENSORS,
+            android.Manifest.permission.READ_PHONE_STATE,
 
     };
 
@@ -43,6 +44,7 @@ public class WelcomeActivity extends BaseActivity {
         setContentView(R.layout.ac_welcome);
 
         PermissionUtils.checkPermissionArray(this, permissionArray, 2);
+        PermissionUtils.checkPermissionArray(this, permissionArray, 5);
 
         if (checkMounted(WelcomeActivity.this, "/mnt/sdcard")) {
             Log.e("tag", "内置SD卡可用");

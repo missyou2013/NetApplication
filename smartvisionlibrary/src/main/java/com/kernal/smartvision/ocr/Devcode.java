@@ -17,6 +17,7 @@ package com.kernal.smartvision.ocr;
  *    
  */
 public class Devcode {
+	//放 开发码 的地方
 //	public static String devcode = "5YYX5LQS5PAH6YC";
 	public static String devcode = "5REX6YKM5PM66IO";
 	public static String importTempalgeID = "SV_ID_VIN_MOBILE";

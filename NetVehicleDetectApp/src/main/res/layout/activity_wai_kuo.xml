@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/top_title"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="0dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ac_waikuo_height"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="0.5"
+                        android:gravity="center_vertical"
+                        android:text="外廓长度："
+                      
+                        android:textSize="@dimen/ac_waikuo_font_size" />
+
+                    <TextView
+                        android:id="@+id/ac_car_waikuo_chang"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|left"
+                        android:text=""
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/ac_waikuo_font_size" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ac_waikuo_height"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="0.5"
+                        android:gravity="center_vertical"
+                        android:text="外廓宽度："
+                      
+                        android:textSize="@dimen/ac_waikuo_font_size" />
+
+                    <TextView
+                        android:id="@+id/ac_car_waikuo_kuan"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|left"
+                        android:maxLines="1"
+                        android:text=""
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/ac_waikuo_font_size" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ac_waikuo_height"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="0.5"
+                        android:gravity="center_vertical"
+                        android:text="外廓高度："
+                      
+                        android:textSize="@dimen/ac_waikuo_font_size" />
+
+                    <TextView
+                        android:id="@+id/ac_car_waikuo_gao"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|left"
+                        android:maxLines="1"
+                        android:text=""
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/ac_waikuo_font_size" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ac_waikuo_height"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="0.5"
+                        android:gravity="center_vertical"
+                        android:text="外廓限值："
+                      
+                        android:textSize="@dimen/ac_waikuo_font_size" />
+
+                    <TextView
+                        android:id="@+id/ac_car_waikuo_xianzhi"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|left"
+                        android:maxLines="1"
+                        android:text=""
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/ac_waikuo_font_size" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_1" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ac_waikuo_height"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="0.5"
+                        android:gravity="center_vertical"
+                        android:text="判定："
+                      
+                        android:textSize="@dimen/ac_waikuo_font_size" />
+
+                    <TextView
+                        android:id="@+id/ac_car_waikuo_panding"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|left"
+                        android:text=""
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/ac_waikuo_font_size" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_1" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

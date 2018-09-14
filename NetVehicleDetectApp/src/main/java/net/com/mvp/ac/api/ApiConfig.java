@@ -136,4 +136,10 @@ public interface ApiConfig {
     //远程上线
     String CARS_UP_LINE = "/api/Remote/Para";
 
+    //外廓数据接口
+    String WAI_KUO_SIZE = "/api/DetectionData/OverallSize";
+
+    //逆反射系数数据接口
+    String NIFAN_XISHU = "/api/DetectionData/InverseCoefficient";
+
 }

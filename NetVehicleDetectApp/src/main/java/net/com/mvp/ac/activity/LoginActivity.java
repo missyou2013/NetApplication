@@ -502,6 +502,7 @@ public class LoginActivity extends BaseActivity {
                     @Override
                     public void onStart(Request<String, ? extends Request> request) {
                         super.onStart(request);
+                        CommonUtils.showLoadingDialog(instances, "加载中...");
                     }
 
                     @Override
@@ -548,11 +549,13 @@ public class LoginActivity extends BaseActivity {
                                     .try_again), Toast.LENGTH_LONG).show();
                             UtilsLog.e("getDataToLogin-result==" + "没有数据");
                         }
+                        CommonUtils.hideLoadingDialog(instances);
                     }
 
                     @Override
                     public void onError(Response<String> response) {
                         super.onError(response);
+                        CommonUtils.hideLoadingDialog(instances);
                         UtilsLog.e("getDataUsersList-onError==" + response.body());
                     }
                 });

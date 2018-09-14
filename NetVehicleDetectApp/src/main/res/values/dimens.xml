@@ -21,7 +21,8 @@
     <dimen name="ac_textsize16sp">16sp</dimen>
     <!-- 车辆详情每个item的高度 -->
     <dimen name="ac_car_details_height">30dp</dimen>
-
+    <dimen name="ac_waikuo_height">50dp</dimen>
+    <dimen name="ac_waikuo_font_size">21sp</dimen>
     <dimen name="ac_cardetails_font_size">19sp</dimen>
     <dimen name="ac_recheck_font_size">16sp</dimen>
 
