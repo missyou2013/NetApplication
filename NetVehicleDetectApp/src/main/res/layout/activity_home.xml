@@ -20,7 +20,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="50dp">
+                android:layout_marginTop="20dp">
 
                 <Button
                     android:id="@+id/ac_home_btn_obd"
@@ -62,7 +62,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="70dp">
+                android:layout_marginTop="30dp">
 
                 <Button
                     android:id="@+id/ac_home_btn_zhiwen"
@@ -87,16 +87,57 @@
 
 
                 <Button
-                    android:id="@+id/ac_home_btn_check"
+                    android:id="@+id/ac_home_btn_chayan_qianzi"
                     android:layout_width="@dimen/home_btn_w"
                     android:layout_height="@dimen/home_btn_h"
-                    android:layout_centerVertical="true"
+                    android:layout_alignParentTop="true"
                     android:layout_toRightOf="@+id/ac_home_view_m2"
                     android:background="@drawable/my_shape_blue_light"
                     android:gravity="center"
                     android:paddingLeft="15dp"
                     android:paddingRight="15dp"
+                    android:text="签字识别"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp">
+
+                <Button
+                    android:id="@+id/ac_home_btn_check"
+                    android:layout_width="@dimen/home_btn_w"
+                    android:layout_height="@dimen/home_btn_h"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/ac_home_view_m25"
+                    android:background="@drawable/my_shape_blue_light"
+                    android:gravity="center"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
                     android:text="汽车检测"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"/>
+                <TextView
+                    android:id="@+id/ac_home_view_m25"
+                    android:layout_width="60dp"
+                    android:layout_height="1dp"
+                    android:layout_centerInParent="true"></TextView>
+
+
+                <Button
+                    android:id="@+id/ac_home_btn_other"
+                    android:layout_width="@dimen/home_btn_w"
+                    android:layout_height="@dimen/home_btn_h"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/ac_home_view_m25"
+                    android:background="@drawable/my_shape_blue_light"
+                    android:gravity="center"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:text="xxxxx"
+                    android:visibility="invisible"
                     android:textColor="@color/white"
                     android:textSize="18sp"/>
             </RelativeLayout>

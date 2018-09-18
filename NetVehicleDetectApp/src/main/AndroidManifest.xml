@@ -172,7 +172,14 @@
             android:screenOrientation="portrait" />
         <activity android:name=".wuxi.blesample.operation.OperationActivity" />
         <activity android:name=".wuxi.blesample.MainActivity" />
-        <activity android:name=".wuxi.WaiKuoActivity"></activity>
+        <activity android:name=".wuxi.WaiKuoActivity" />
+        <activity
+            android:name=".wuxi.SignatureActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".wuxi.PhotoPreviewActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".wuxi.NiFanActivity"></activity>
     </application>
 
 </manifest>

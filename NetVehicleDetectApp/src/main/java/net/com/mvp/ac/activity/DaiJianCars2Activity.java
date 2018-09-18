@@ -37,6 +37,7 @@ import net.com.mvp.ac.commons.UtilsLog;
 import net.com.mvp.ac.model.CarCheckItemsModel;
 import net.com.mvp.ac.model.CarsInforModel;
 import net.com.mvp.ac.model.DownLineModel;
+import net.com.mvp.ac.wuxi.NiFanActivity;
 import net.com.mvp.ac.wuxi.WaiKuoActivity;
 
 import java.util.ArrayList;
@@ -215,7 +216,7 @@ public class DaiJianCars2Activity extends BaseActivity implements AdapterView.On
         }
         else if (CHECK_MODE == 4){
             //逆反系数
-            intent2 = new Intent(DaiJianCars2Activity.this, DiPanDongTaiActivity.class);
+            intent2 = new Intent(DaiJianCars2Activity.this, NiFanActivity.class);
 //            intent2.putExtra("check_mode",BaseApplication.JIANCE_MODE);
         }
         intent2.putExtra("model_CarsInforModel", carsInforModel);
@@ -458,8 +459,8 @@ public class DaiJianCars2Activity extends BaseActivity implements AdapterView.On
 //                        UtilsLog.e("getDataCarsList-result==" + result);
                         String newResult = result.substring(1, result.length() - 1).replaceAll("\\\\", "");
                         UtilsLog.e("getDataCarsListByMode-newResult==" + newResult);
-                        UtilsLog.showLongLogs("==11=="+newResult);
-                        UtilsLog.showLogCompletion("==22=="+newResult,200);
+//                        UtilsLog.showLongLogs("==11=="+newResult);
+//                        UtilsLog.showLogCompletion("==22=="+newResult,200);
                         if (!TextUtils.isEmpty(newResult) && !"[[]]".equals(newResult) && !"[{}]".equals
                                 (newResult) && !"[]".equals(newResult)) {
                             carsInforModelList = new ArrayList<CarsInforModel>();
